@@ -13,7 +13,7 @@ MY_P="PlemolJP_NF_${MY_PV}"
 
 DESCRIPTION="A composite font of IBM Plex Mono and IBM Plex Sans JP"
 HOMEPAGE="https://github.com/yuru7/PlemolJP"
-SRC_URI="https://github.com/yuru7/PlemolJP/releases/download/${MY_PV}/${MY_P}.zip"
+SRC_URI="https://github.com/yuru7/PlemolJP/releases/download/${MY_PV}/${MY_P}.zip -> ${P}.zip"
 
 LICENSE="OFL-1.1 MIT"
 SLOT="0"

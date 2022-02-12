@@ -13,7 +13,7 @@ MY_P="Firge_${MY_PV}"
 
 DESCRIPTION="A composite font of Fira Mono and GenShin-Gothic"
 HOMEPAGE="https://github.com/yuru7/Firge"
-SRC_URI="https://github.com/yuru7/Firge/releases/download/${MY_PV}/${MY_P}.zip"
+SRC_URI="https://github.com/yuru7/Firge/releases/download/${MY_PV}/${MY_P}.zip -> ${P}.zip"
 
 LICENSE="OFL-1.1 MIT"
 SLOT="0"
