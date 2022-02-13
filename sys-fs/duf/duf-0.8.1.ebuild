@@ -61,7 +61,7 @@ EGO_SUM=(
 
 go-module_set_globals
 
-SRC_URI="https://${EGO_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+SRC_URI="https://github.com/muesli/duf/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${EGO_SUM_SRC_URI}"
 
 LICENSE="MIT"
