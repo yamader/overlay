@@ -1,4 +1,6 @@
-# YamaD's personal gentoo overlay
+# overlay
+
+YamaD's personal gentoo overlay
 
 ## install
 
