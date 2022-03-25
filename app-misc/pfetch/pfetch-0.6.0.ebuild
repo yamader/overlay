@@ -10,10 +10,10 @@ DESCRIPTION="A pretty system information tool written in POSIX sh."
 HOMEPAGE="https://github.com/dylanaraps/pfetch"
 
 if [[ ${PV} == "9999" ]]; then
-  inherit git-r3
-  EGIT_REPO_URI="https://github.com/dylanaraps/${PN}.git"
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/dylanaraps/${PN}.git"
 else
-  SRC_URI="https://github.com/dylanaraps/${PN}/archive/${PV}.tar.gz"
+	SRC_URI="https://github.com/dylanaraps/${PN}/archive/${PV}.tar.gz"
 fi
 
 LICENSE="MIT"
