@@ -18,11 +18,11 @@ if [[ ${PV} == "9999" ]]; then
 else
 	SRC_URI="https://gitlab.com/jschx/${PN}/-/archive/${MY_PV}/${PN}-${MY_PV}.tar.gz"
 	S="${WORKDIR}/${MY_P}"
+	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
 
 LICENSE="0BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 
 src_install() {
 	install -Dm755 ufetch-gentoo "${D}${EPREFIX}/usr/bin/ufetch"

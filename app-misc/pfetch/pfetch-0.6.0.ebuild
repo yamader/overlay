@@ -14,11 +14,11 @@ if [[ ${PV} == "9999" ]]; then
 	EGIT_REPO_URI="https://github.com/dylanaraps/${PN}.git"
 else
 	SRC_URI="https://github.com/dylanaraps/${PN}/archive/${PV}.tar.gz"
+	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 
 src_install() {
 	if [[ ${PV} == "9999" ]]; then
