@@ -13,7 +13,7 @@ if [[ ${PV} == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/dylanaraps/${PN}.git"
 else
-	SRC_URI="https://github.com/dylanaraps/${PN}/archive/${PV}.tar.gz"
+	SRC_URI="https://github.com/dylanaraps/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
 

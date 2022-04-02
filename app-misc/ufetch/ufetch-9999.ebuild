@@ -16,7 +16,7 @@ if [[ ${PV} == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/jschx/${PN}.git"
 else
-	SRC_URI="https://gitlab.com/jschx/${PN}/-/archive/${MY_PV}/${PN}-${MY_PV}.tar.gz"
+	SRC_URI="https://gitlab.com/jschx/${PN}/-/archive/${MY_PV}/${PN}-${MY_PV}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${MY_P}"
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
