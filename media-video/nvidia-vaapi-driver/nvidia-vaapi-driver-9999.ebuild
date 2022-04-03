@@ -24,6 +24,7 @@ fi
 LICENSE="MIT"
 SLOT="0"
 
-DEPEND="media-libs/gst-plugins-bad
+DEPEND="x11-drivers/nvidia-drivers
+	media-libs/gst-plugins-bad
 	media-libs/nv-codec-headers"
 RDEPEND="${DEPEND}"
