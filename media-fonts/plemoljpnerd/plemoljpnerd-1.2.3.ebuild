@@ -24,4 +24,5 @@ BDEPEND="app-arch/unzip"
 S="${WORKDIR}/${MY_P}"
 
 FONT_SUFFIX="ttf"
-FONT_S=("${S}/PlemolJP35Console_NF" "${S}/PlemolJPConsole_NF")
+FONT_S=("${S}/PlemolJP35Console_NF"
+	"${S}/PlemolJPConsole_NF")

@@ -18,7 +18,10 @@ SRC_URI="https://github.com/yuru7/Firge/releases/download/${MY_PV}/${MY_P}.zip -
 LICENSE="OFL-1.1 MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
+IUSE="nerd"
 
+DEPEND="nerd? ( media-fonts/firgenerd )"
+RDEPEND="${DEPEND}"
 BDEPEND="app-arch/unzip"
 
 S="${WORKDIR}/${MY_P}"

@@ -18,10 +18,16 @@ SRC_URI="https://github.com/yuru7/PlemolJP/releases/download/${MY_PV}/${MY_P}.zi
 LICENSE="OFL-1.1 MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
+IUSE="nerd"
 
+DEPEND="nerd? ( media-fonts/plemoljpnerd )"
+RDEPEND="${DEPEND}"
 BDEPEND="app-arch/unzip"
 
 S="${WORKDIR}/${MY_P}"
 
 FONT_SUFFIX="ttf"
-FONT_S=("${S}/PlemolJP" "${S}/PlemolJP35" "${S}/PlemolJP35Console" "${S}/PlemolJPConsole")
+FONT_S=("${S}/PlemolJP"
+	"${S}/PlemolJP35"
+	"${S}/PlemolJP35Console"
+	"${S}/PlemolJPConsole")
