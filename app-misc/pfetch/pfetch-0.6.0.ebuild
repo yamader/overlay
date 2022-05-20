@@ -6,7 +6,7 @@ EAPI=8
 DESCRIPTION="A pretty system information tool written in POSIX sh."
 HOMEPAGE="https://github.com/dylanaraps/pfetch"
 
-if [[ ${PV} == "9999" ]]; then
+if [[ "${PV}" == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/dylanaraps/${PN}.git"
 else
@@ -18,7 +18,7 @@ LICENSE="MIT"
 SLOT="0"
 
 src_install() {
-	if [[ ${PV} == "9999" ]]; then
+	if [[ "${PV}" == "9999" ]]; then
 		emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
 	else
 		install -Dm755 pfetch "${D}${EPREFIX}/usr/bin/pfetch"

@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="An input method engine for Fcitx, which uses libskk as its backend"
 HOMEPAGE="https://github.com/fcitx/fcitx-skk"
 
-if [[ ${PV} == "9999" ]]; then
+if [[ "${PV}" == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/fcitx/${PN}.git"
 else

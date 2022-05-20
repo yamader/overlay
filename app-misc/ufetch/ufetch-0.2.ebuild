@@ -9,7 +9,7 @@ MY_P="${PN}-${MY_PV}"
 DESCRIPTION="Tiny system info for Unix-like operating systems"
 HOMEPAGE="https://gitlab.com/jschx/ufetch"
 
-if [[ ${PV} == "9999" ]]; then
+if [[ "${PV}" == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.com/jschx/${PN}.git"
 else
@@ -18,7 +18,7 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 fi
 
-LICENSE="0BSD"
+LICENSE="ISC"
 SLOT="0"
 
 src_install() {

@@ -10,7 +10,7 @@ MY_PV="v${PV}"
 DESCRIPTION="A VA-API implemention using NVIDIA's NVDEC"
 HOMEPAGE="https://github.com/elFarto/nvidia-vaapi-driver"
 
-if [[ ${PV} == "9999" ]]; then
+if [[ "${PV}" == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/elFarto/${PN}.git"
 else
