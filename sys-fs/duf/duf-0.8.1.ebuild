@@ -59,7 +59,8 @@ MY_PV="v${PV}"
 DESCRIPTION="Disk Usage/Free Utility"
 HOMEPAGE="https://github.com/muesli/duf"
 
-SRC_URI="https://github.com/muesli/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI="https://github.com/muesli/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz
+	${EGO_SUM_SRC_URI}"
 
 LICENSE="MIT"
 SLOT="0"
