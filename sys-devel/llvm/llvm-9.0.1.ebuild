@@ -4,7 +4,7 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_8 )
-inherit cmake-utils llvm.org multilib-minimal multiprocessing \
+inherit cmake llvm.org multilib-minimal multiprocessing \
 	pax-utils python-any-r1 toolchain-funcs
 
 # no changes in 9.0.1
@@ -95,7 +95,7 @@ src_prepare() {
 	sed -i -e 's/xcrun/false/' utils/lit/lit/util.py || die
 
 	# User patches + QA
-	cmake-utils_src_prepare
+	cmake_src_prepare
 }
 
 # Is LLVM being linked against libc++?
@@ -213,11 +213,11 @@ multilib_src_configure() {
 
 	# LLVM_ENABLE_ASSERTIONS=NO does not guarantee this for us, #614844
 	use debug || local -x CPPFLAGS="${CPPFLAGS} -DNDEBUG"
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 multilib_src_compile() {
-	cmake-utils_src_compile
+	cmake_src_compile
 
 	pax-mark m "${BUILD_DIR}"/bin/llvm-rtdyld
 	pax-mark m "${BUILD_DIR}"/bin/lli
@@ -233,7 +233,7 @@ multilib_src_compile() {
 multilib_src_test() {
 	# respect TMPDIR!
 	local -x LIT_PRESERVES_TMP=1
-	cmake-utils_src_make check
+	cmake_src_make check
 }
 
 src_install() {
@@ -253,7 +253,7 @@ src_install() {
 }
 
 multilib_src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 
 	# move headers to /usr/include for wrapping
 	rm -rf "${ED}"/usr/include || die
