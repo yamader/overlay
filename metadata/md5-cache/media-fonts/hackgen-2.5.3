@@ -1,0 +1,15 @@
+BDEPEND=app-arch/unzip X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DEFINED_PHASES=install postinst postrm setup
+DEPEND=nerd? ( media-fonts/hackgennerd )
+DESCRIPTION=A composite font of Hack and GenJyuu-Gothic
+EAPI=7
+HOMEPAGE=https://github.com/yuru7/HackGen
+INHERIT=font
+IUSE=nerd X
+KEYWORDS=~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86
+LICENSE=OFL-1.1 MIT
+RDEPEND=nerd? ( media-fonts/hackgennerd )
+SLOT=0
+SRC_URI=https://github.com/yuru7/HackGen/releases/download/v2.5.3/HackGen_v2.5.3.zip -> hackgen-2.5.3.zip
+_eclasses_=font	d31f12a0f6e13d56dc3062e76ae58a61
+_md5_=9434ac3039c3a11a0339b31e1245bede

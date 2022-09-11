@@ -6,5 +6,12 @@ YamaD's personal gentoo overlay
 
 ```
 # eselect repository add yamad git https://github.com/yamader/overlay.git
-# emaint sync -r yamad
+# emerge --sync yamad
+```
+
+## develop
+
+```
+% pkgdev manifest
+% pkgcheck scan
 ```
