@@ -11,5 +11,5 @@ LICENSE=OFL-1.1 MIT
 RDEPEND=nerd? ( media-fonts/firgenerd )
 SLOT=0
 SRC_URI=https://github.com/yuru7/Firge/releases/download/v0.2.0/Firge_v0.2.0.zip -> firge-0.2.0.zip
-_eclasses_=font	d31f12a0f6e13d56dc3062e76ae58a61
+_eclasses_=font	9cdfddf092c05c7c4efd70cc30dea046
 _md5_=5896bd98eaeb6749aeee2f29a737de2b
