@@ -27,13 +27,13 @@ FONT_SUFFIX="ttf"
 
 src_install() {
 	FONT_S=(
-		"${S}/${MY_P}/PlemolJP"
-		"${S}/${MY_P}/PlemolJP35"
-		"${S}/${MY_P}/PlemolJP35Console"
-		"${S}/${MY_P}/PlemolJPConsole"
+		"${S}"/${MY_P}/PlemolJP
+		"${S}"/${MY_P}/PlemolJP35
+		"${S}"/${MY_P}/PlemolJP35Console
+		"${S}"/${MY_P}/PlemolJPConsole
 	) font_src_install
 	use nerdfonts && FONT_S=(
-		"${S}/${MY_P_NF}/PlemolJP35Console_NF"
-		"${S}/${MY_P_NF}/PlemolJPConsole_NF"
+		"${S}"/${MY_P_NF}/PlemolJP35Console_NF
+		"${S}"/${MY_P_NF}/PlemolJPConsole_NF
 	) font_src_install
 }

@@ -17,6 +17,10 @@ LICENSE="MIT BSD Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
 
+src_compile() {
+	ego build
+}
+
 src_install() {
 	dobin ${PN}
 	doman ${PN}.1
