@@ -12,6 +12,6 @@ YamaD's personal gentoo overlay
 ## develop
 
 ```
-% pkgdev manifest
+% pkgdev manifest -f
 % pkgcheck scan
 ```
