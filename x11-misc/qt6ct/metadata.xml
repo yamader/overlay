@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<use>
+    <flag name="svg">For the SVG icon support</flag>
+</use>
+<upstream>
+	<remote-id type="github">trialuser02/qt6ct</remote-id>
+</upstream>
+</pkgmetadata>
