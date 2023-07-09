@@ -5,7 +5,7 @@
          "Source Code": "https://github.com/AppImageCrafters/appimage-builder",
      },
 -    packages=setuptools.find_packages(),
-+    packages=setuptools.find_packages(exclude=["tests", "tests.*"])),
++    packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
      classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
