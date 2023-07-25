@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DESCRIPTION=A Grub Theme in the style of Minecraft!
+EAPI=8
+HOMEPAGE=https://github.com/Lxtharia/minegrub-theme
+INHERIT=git-r3
+LICENSE=MIT
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	97f7f638070d17e4c2b6542589bb4575
+_md5_=b0d7531617fae611f7eed89801fe51f1
