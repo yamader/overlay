@@ -11,6 +11,7 @@ CRATES="
 	aead@0.5.2
 	age-core@0.9.0
 	age@0.9.1
+	ahash@0.7.6
 	aho-corasick@0.7.20
 	aho-corasick@1.0.1
 	anstyle@1.0.0
@@ -19,6 +20,7 @@ CRATES="
 	autocfg@1.1.0
 	backtrace@0.3.67
 	base64@0.13.1
+	base64@0.21.2
 	bech32@0.9.1
 	bitflags@1.3.2
 	block-buffer@0.10.4
@@ -31,14 +33,18 @@ CRATES="
 	cfg-if@1.0.0
 	chacha20@0.9.1
 	chacha20poly1305@0.10.1
+	charset@0.1.3
+	chumsky@0.9.2
 	cipher@0.4.4
 	clap@4.3.5
 	clap_builder@4.3.5
 	clap_complete@4.2.3
 	clap_derive@4.3.2
 	clap_lex@0.5.0
+	configparser@3.0.2
 	console@0.15.7
 	cookie-factory@0.3.2
+	core-foundation-sys@0.8.4
 	cpufeatures@0.2.7
 	crc32fast@1.3.2
 	crossbeam-utils@0.8.15
@@ -50,6 +56,7 @@ CRATES="
 	darling_core@0.14.4
 	darling_macro@0.14.4
 	dashmap@5.4.0
+	data-encoding@2.4.0
 	decompress@0.6.0
 	derive_builder@0.12.0
 	derive_builder_core@0.12.0
@@ -60,6 +67,7 @@ CRATES="
 	displaydoc@0.2.4
 	either@1.8.1
 	encode_unicode@0.3.6
+	encoding_rs@0.8.32
 	errno-dragonfly@0.1.2
 	errno@0.3.1
 	fastrand@1.9.0
@@ -72,6 +80,7 @@ CRATES="
 	fluent@0.16.0
 	fnv@1.0.7
 	form_urlencoded@1.1.0
+	fs-err@2.9.0
 	generic-array@0.14.7
 	getrandom@0.1.16
 	getrandom@0.2.9
@@ -110,14 +119,16 @@ CRATES="
 	linux-raw-sys@0.3.7
 	lock_api@0.4.9
 	log@0.4.17
+	mailparse@0.14.0
 	memchr@2.5.0
-	minijinja@1.0.0
+	minijinja@1.0.5
 	minimal-lexical@0.2.1
 	miniz_oxide@0.6.2
 	miniz_oxide@0.7.1
 	nix@0.26.2
 	no-std-compat@0.4.1
 	nom@7.1.3
+	ntapi@0.4.1
 	number_prefix@0.4.0
 	object@0.30.3
 	once_cell@1.17.1
@@ -143,7 +154,10 @@ CRATES="
 	proc-macro-error-attr@1.0.4
 	proc-macro-error@1.0.4
 	proc-macro2@1.0.56
+	psm@0.1.21
+	python-pkginfo@0.5.6
 	quote@1.0.27
+	quoted_printable@0.4.8
 	rand@0.7.3
 	rand@0.8.5
 	rand_chacha@0.2.2
@@ -153,9 +167,11 @@ CRATES="
 	rand_hc@0.2.0
 	redox_syscall@0.2.16
 	redox_syscall@0.3.5
-	regex-syntax@0.7.1
-	regex@1.8.1
+	regex-automata@0.3.3
+	regex-syntax@0.7.4
+	regex@1.9.1
 	reword@7.0.0
+	rfc2047-decoder@0.2.2
 	rust-embed-impl@6.5.0
 	rust-embed-utils@7.5.0
 	rust-embed@6.6.1
@@ -169,11 +185,12 @@ CRATES="
 	scopeguard@1.1.0
 	scrypt@0.10.0
 	secrecy@0.8.0
-	self-replace@1.3.2
+	self-replace@1.3.5
 	self_cell@0.10.2
 	serde@1.0.163
 	serde_derive@1.0.163
 	serde_json@1.0.96
+	serde_spanned@0.6.2
 	sha2@0.10.6
 	shell-words@1.1.0
 	shlex@1.1.0
@@ -181,11 +198,13 @@ CRATES="
 	slug@0.1.4
 	smallvec@1.10.0
 	socket2@0.4.9
+	stacker@0.1.15
 	static_assertions@1.1.0
 	strsim@0.10.0
 	subtle@2.4.1
 	syn@1.0.109
 	syn@2.0.15
+	sysinfo@0.29.4
 	tar@0.4.38
 	tempfile@3.5.0
 	terminal_size@0.2.6
@@ -198,6 +217,7 @@ CRATES="
 	tinyvec@1.6.0
 	tinyvec_macros@0.1.1
 	toml@0.5.11
+	toml@0.7.3
 	toml_datetime@0.6.1
 	toml_edit@0.19.8
 	tracing-attributes@0.1.24
@@ -213,6 +233,7 @@ CRATES="
 	unicode-segmentation@1.10.1
 	unicode-width@0.1.10
 	universal-hash@0.5.0
+	unscanny@0.1.0
 	url@2.3.1
 	uuid@1.3.2
 	vcpkg@0.2.15
@@ -257,6 +278,7 @@ CRATES="
 
 declare -A GIT_CRATES=(
 	[dialoguer]='https://github.com/console-rs/dialoguer;47a9d4df729db7ffc1492bd0845be786e6f20153;dialoguer-%commit%'
+	[monotrail-utils]='https://github.com/konstin/poc-monotrail;596c51ed1955ada7117b09b526eba6140cbdc288;poc-monotrail-%commit%/monotrail-utils'
 )
 
 inherit cargo
@@ -264,13 +286,13 @@ inherit cargo
 DESCRIPTION="An Experimental Package Management Solution for Python"
 HOMEPAGE="https://rye-up.com"
 SRC_URI="
-	https://github.com/mitsuhiko/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/mitsuhiko/rye/archive/${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 
 LICENSE="MIT"
 # Dependent crate licenses
-LICENSE+=" Apache-2.0 BSD MIT Unicode-DFS-2016"
+LICENSE+=" 0BSD Apache-2.0 BSD MIT Unicode-DFS-2016"
 SLOT="0"
 KEYWORDS="~amd64"
 
