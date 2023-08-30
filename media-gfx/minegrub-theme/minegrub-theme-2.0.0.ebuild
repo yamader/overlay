@@ -21,7 +21,6 @@ SLOT="0"
 
 src_install() {
 	dodoc README.md
-	insinto /usr/share/grub/themes/${PN}
-	rm LICENSE README.md
-	doins -r .
+	insinto /boot/grub/themes
+	doins -r minegrub
 }
