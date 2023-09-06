@@ -203,7 +203,7 @@ CRATES="
 	zvariant_derive@2.10.0
 "
 
-inherit cargo
+inherit cargo udev
 
 DESCRIPTION="Dynamic key remapp for X and Wayland"
 HOMEPAGE="https://github.com/k0kubun/xremap"
@@ -228,4 +228,9 @@ src_configure() {
 		$(usev hypr)
 	)
 	cargo_src_configure --no-default-features
+}
+
+src_install() {
+	cargo_src_install
+	udev_newrules "${FILESDIR}/0.8.6-input.rules" 99-xremap-input.rules
 }
