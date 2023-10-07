@@ -47,6 +47,9 @@ CRATES="
 	core-foundation-sys@0.8.4
 	cpufeatures@0.2.7
 	crc32fast@1.3.2
+	crossbeam-channel@0.5.8
+	crossbeam-deque@0.8.3
+	crossbeam-epoch@0.9.15
 	crossbeam-utils@0.8.15
 	crypto-common@0.1.6
 	curl-sys@0.4.61+curl-8.0.1
@@ -121,6 +124,7 @@ CRATES="
 	log@0.4.17
 	mailparse@0.14.0
 	memchr@2.5.0
+	memoffset@0.9.0
 	minijinja@1.0.5
 	minimal-lexical@0.2.1
 	miniz_oxide@0.6.2
@@ -129,6 +133,7 @@ CRATES="
 	no-std-compat@0.4.1
 	nom@7.1.3
 	ntapi@0.4.1
+	num_cpus@1.16.0
 	number_prefix@0.4.0
 	object@0.30.3
 	once_cell@1.17.1
@@ -153,10 +158,10 @@ CRATES="
 	ppv-lite86@0.2.17
 	proc-macro-error-attr@1.0.4
 	proc-macro-error@1.0.4
-	proc-macro2@1.0.56
+	proc-macro2@1.0.66
 	psm@0.1.21
 	python-pkginfo@0.5.6
-	quote@1.0.27
+	quote@1.0.33
 	quoted_printable@0.4.8
 	rand@0.7.3
 	rand@0.8.5
@@ -165,6 +170,8 @@ CRATES="
 	rand_core@0.5.1
 	rand_core@0.6.4
 	rand_hc@0.2.0
+	rayon-core@1.11.0
+	rayon@1.7.0
 	redox_syscall@0.2.16
 	redox_syscall@0.3.5
 	regex-automata@0.3.3
@@ -203,13 +210,13 @@ CRATES="
 	strsim@0.10.0
 	subtle@2.4.1
 	syn@1.0.109
-	syn@2.0.15
-	sysinfo@0.29.4
+	syn@2.0.29
+	sysinfo@0.29.9
 	tar@0.4.38
 	tempfile@3.5.0
 	terminal_size@0.2.6
-	thiserror-impl@1.0.40
-	thiserror@1.0.40
+	thiserror-impl@1.0.47
+	thiserror@1.0.47
 	time-core@0.1.1
 	time-macros@0.2.9
 	time@0.3.21
@@ -241,6 +248,7 @@ CRATES="
 	walkdir@2.3.3
 	wasi@0.11.0+wasi-snapshot-preview1
 	wasi@0.9.0+wasi-snapshot-preview1
+	whattheshell@1.0.1
 	which@4.4.0
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-util@0.1.5
