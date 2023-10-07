@@ -8,4 +8,7 @@
     <flag name="sway">Sway</flag>
     <flag name="hypr">Hyprland</flag>
   </use>
+  <upstream>
+    <remote-id type="github">k0kubun/xremap</remote-id>
+  </upstream>
 </pkgmetadata>
