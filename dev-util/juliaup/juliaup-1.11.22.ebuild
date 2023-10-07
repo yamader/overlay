@@ -6,9 +6,8 @@
 EAPI=8
 
 CRATES="
-	addr2line@0.19.0
+	addr2line@0.20.0
 	adler@1.0.2
-	aho-corasick@0.7.20
 	aho-corasick@1.0.2
 	android-tzdata@0.1.1
 	android_system_properties@0.1.5
@@ -17,14 +16,15 @@ CRATES="
 	anstyle-query@1.0.0
 	anstyle-wincon@1.0.1
 	anstyle@1.0.1
-	anyhow@1.0.71
-	assert_cmd@2.0.11
+	anyhow@1.0.72
+	assert_cmd@2.0.12
 	assert_fs@1.0.13
 	autocfg@1.1.0
-	backtrace@0.3.67
+	backtrace@0.3.68
 	base64@0.21.2
 	bitflags@1.3.2
-	bstr@1.5.0
+	bitflags@2.3.3
+	bstr@1.6.0
 	built@0.6.1
 	bumpalo@3.13.0
 	bytes@1.4.0
@@ -32,9 +32,9 @@ CRATES="
 	cc@1.0.79
 	cfg-if@1.0.0
 	chrono@0.4.26
-	clap@4.3.8
-	clap_builder@4.3.8
-	clap_derive@4.3.2
+	clap@4.3.19
+	clap_builder@4.3.19
+	clap_derive@4.3.12
 	clap_lex@0.5.0
 	cli-table-derive@0.4.5
 	cli-table@0.4.7
@@ -53,15 +53,15 @@ CRATES="
 	dirs@5.0.1
 	doc-comment@0.3.3
 	dunce@1.0.4
-	either@1.8.1
+	either@1.9.0
 	encode_unicode@0.3.6
 	encoding_rs@0.8.32
 	env_logger@0.10.0
 	env_proxy@0.4.1
-	equivalent@1.0.0
+	equivalent@1.0.1
 	errno-dragonfly@0.1.2
 	errno@0.3.1
-	fastrand@1.9.0
+	fastrand@2.0.0
 	filetime@0.2.21
 	flate2@1.0.26
 	float-cmp@0.9.0
@@ -73,26 +73,27 @@ CRATES="
 	futures-channel@0.3.28
 	futures-core@0.3.28
 	futures-io@0.3.28
+	futures-macro@0.3.28
 	futures-sink@0.3.28
 	futures-task@0.3.28
 	futures-util@0.3.28
 	getrandom@0.2.10
 	gimli@0.27.3
-	globset@0.4.10
+	globset@0.4.11
 	globwalk@0.8.1
 	h2@0.3.20
 	hashbrown@0.12.3
 	hashbrown@0.14.0
 	heck@0.4.1
-	hermit-abi@0.2.6
-	hermit-abi@0.3.1
+	hermit-abi@0.3.2
 	http-body@0.4.5
 	http@0.2.9
 	httparse@1.8.0
 	httpdate@1.0.2
 	human-panic@1.1.5
+	human-sort@0.2.2
 	humantime@2.1.0
-	hyper-rustls@0.24.0
+	hyper-rustls@0.24.1
 	hyper-tls@0.5.0
 	hyper@0.14.27
 	iana-time-zone-haiku@0.1.2
@@ -102,33 +103,31 @@ CRATES="
 	indexmap@1.9.3
 	indexmap@2.0.0
 	indicatif@0.17.5
-	indoc@2.0.1
+	indoc@2.0.3
 	instant@0.1.12
-	io-lifetimes@1.0.11
 	ipnet@2.8.0
-	is-terminal@0.4.7
+	is-terminal@0.4.9
 	itertools@0.10.5
 	itertools@0.11.0
-	itoa@1.0.6
+	itoa@1.0.9
 	js-sys@0.3.64
 	lazy_static@1.4.0
 	libc@0.2.147
-	linux-raw-sys@0.3.8
+	linux-raw-sys@0.4.3
 	log@0.4.19
 	memchr@2.5.0
 	memoffset@0.7.1
 	mime@0.3.17
-	miniz_oxide@0.6.2
 	miniz_oxide@0.7.1
 	mio@0.8.8
 	native-tls@0.2.11
 	nix@0.26.2
 	normalize-line-endings@0.3.0
 	normpath@1.1.1
-	num-traits@0.2.15
-	num_cpus@1.15.0
+	num-traits@0.2.16
+	num_cpus@1.16.0
 	number_prefix@0.4.0
-	object@0.30.4
+	object@0.31.1
 	once_cell@1.18.0
 	openssl-macros@0.1.1
 	openssl-probe@0.1.5
@@ -139,39 +138,39 @@ CRATES="
 	path-absolutize@3.1.0
 	path-dedot@3.1.0
 	percent-encoding@2.3.0
-	pin-project-lite@0.2.9
+	pin-project-lite@0.2.10
 	pin-utils@0.1.0
 	pkg-config@0.3.27
-	portable-atomic@1.3.3
+	portable-atomic@1.4.1
 	predicates-core@1.0.6
 	predicates-tree@1.0.9
 	predicates@3.0.3
-	proc-macro2@1.0.63
-	quote@1.0.28
+	proc-macro2@1.0.66
+	quote@1.0.32
 	redox_syscall@0.2.16
 	redox_syscall@0.3.5
 	redox_users@0.4.3
-	regex-automata@0.1.10
-	regex-syntax@0.7.2
-	regex@1.8.4
+	regex-automata@0.3.3
+	regex-syntax@0.7.4
+	regex@1.9.1
 	reqwest@0.11.18
 	ring@0.16.20
 	rustc-demangle@0.1.23
-	rustix@0.37.20
+	rustix@0.38.4
 	rustls-native-certs@0.6.3
-	rustls-pemfile@1.0.2
-	rustls-webpki@0.100.1
-	rustls@0.21.2
-	ryu@1.0.13
+	rustls-pemfile@1.0.3
+	rustls-webpki@0.101.2
+	rustls@0.21.5
+	ryu@1.0.15
 	same-file@1.0.6
-	schannel@0.1.21
+	schannel@0.1.22
 	sct@0.7.0
-	security-framework-sys@2.9.0
-	security-framework@2.9.1
-	semver@1.0.17
-	serde@1.0.164
-	serde_derive@1.0.164
-	serde_json@1.0.99
+	security-framework-sys@2.9.1
+	security-framework@2.9.2
+	semver@1.0.18
+	serde@1.0.175
+	serde_derive@1.0.175
+	serde_json@1.0.103
 	serde_spanned@0.6.3
 	serde_urlencoded@0.7.1
 	shell-words@1.1.0
@@ -182,13 +181,13 @@ CRATES="
 	static_assertions@1.1.0
 	strsim@0.10.0
 	syn@1.0.109
-	syn@2.0.22
-	tar@0.4.38
-	tempfile@3.6.0
+	syn@2.0.27
+	tar@0.4.39
+	tempfile@3.7.0
 	termcolor@1.2.0
 	termtree@0.4.1
-	thiserror-impl@1.0.40
-	thiserror@1.0.40
+	thiserror-impl@1.0.44
+	thiserror@1.0.44
 	thread_local@1.1.7
 	time@0.1.45
 	tinyvec@1.6.0
@@ -197,23 +196,23 @@ CRATES="
 	tokio-rustls@0.24.1
 	tokio-socks@0.5.1
 	tokio-util@0.7.8
-	tokio@1.28.2
+	tokio@1.29.1
 	toml@0.5.11
-	toml@0.7.5
+	toml@0.7.6
 	toml_datetime@0.6.3
-	toml_edit@0.19.11
+	toml_edit@0.19.14
 	tower-service@0.3.2
 	tracing-core@0.1.31
 	tracing@0.1.37
 	try-lock@0.2.4
 	unicode-bidi@0.3.13
-	unicode-ident@1.0.9
+	unicode-ident@1.0.11
 	unicode-normalization@0.1.22
 	unicode-width@0.1.10
 	untrusted@0.7.1
 	url@2.4.0
 	utf8parse@0.2.1
-	uuid@1.4.0
+	uuid@1.4.1
 	vcpkg@0.2.15
 	wait-timeout@0.2.0
 	walkdir@2.3.3
@@ -231,11 +230,10 @@ CRATES="
 	winapi-util@0.1.5
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
-	windows-sys@0.42.0
 	windows-sys@0.45.0
 	windows-sys@0.48.0
 	windows-targets@0.42.2
-	windows-targets@0.48.0
+	windows-targets@0.48.1
 	windows@0.48.0
 	windows_aarch64_gnullvm@0.42.2
 	windows_aarch64_gnullvm@0.48.0
@@ -251,7 +249,7 @@ CRATES="
 	windows_x86_64_gnullvm@0.48.0
 	windows_x86_64_msvc@0.42.2
 	windows_x86_64_msvc@0.48.0
-	winnow@0.4.7
+	winnow@0.5.1
 	winreg@0.10.1
 	winres@0.1.12
 	xattr@0.2.3
@@ -260,12 +258,10 @@ CRATES="
 
 inherit cargo
 
-MY_PV="v${PV}"
-
 DESCRIPTION="Julia installer and version multiplexer"
 HOMEPAGE="https://github.com/JuliaLang/juliaup"
 SRC_URI="
-	https://github.com/JuliaLang/${PN}/archive/${MY_PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/JuliaLang/juliaup/archive/v${PV}.tar.gz -> ${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
 
@@ -273,4 +269,4 @@ LICENSE="MIT"
 # Dependent crate licenses
 LICENSE+=" Apache-2.0 BSD ISC MIT MPL-2.0 Unicode-DFS-2016"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
