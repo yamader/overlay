@@ -411,5 +411,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 src_install() {
-	cargo_src_install -p typst-cli
+	cargo_src_install --path crates/typst-cli
 }
