@@ -1,0 +1,11 @@
+BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test
+DESCRIPTION=undo any command
+EAPI=8
+HOMEPAGE=http://blog.kazuhooku.com/2014/04/announcing-unco-undo-changes-to-files.html
+INHERIT=cmake
+KEYWORDS=~amd64
+SLOT=0
+SRC_URI=https://github.com/kazuho/unco/archive/v0.2.0.tar.gz -> unco-0.2.0.tar.gz
+_eclasses_=toolchain-funcs	edeef89edaf21d30225d31702ab117ac	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	baa4d385108ac87993edac956a916a36	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	39e7a84b06eff4efd9f2e0c3d1668b98	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	0f2e0c197fad0312f3c4765c9cf36271
+_md5_=38325411684f9e40b09cc9fe9293e7c8

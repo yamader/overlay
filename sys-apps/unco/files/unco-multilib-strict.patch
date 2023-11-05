@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -6,7 +6,7 @@ SET(serial "0.2.0")
+ SET(soserial "1")
+ SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -g")
+ SET(BINDIR_REL "bin")
+-SET(LIBDIR_REL "lib")
++SET(LIBDIR_REL "lib64")
+ SET(MANDIR_REL "share/man")
+ 
+ INCLUDE_DIRECTORIES(third-party/kazutils.c third-party/sha1)
