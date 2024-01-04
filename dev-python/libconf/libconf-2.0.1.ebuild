@@ -4,14 +4,14 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( pypy3 python3_{3..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="A pure-Python libconfig reader/writer with permissive license"
 HOMEPAGE="
-	https://pypi.org/project/libconf/
 	https://github.com/ChrisAichinger/python-libconf
+	https://pypi.org/project/libconf/
 "
 
 LICENSE="MIT"

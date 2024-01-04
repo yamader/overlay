@@ -4,14 +4,14 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=poetry
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="Python library to build pretty command line user prompts ⭐️"
 HOMEPAGE="
-	https://pypi.org/project/questionary/
 	https://github.com/tmbo/questionary
+	https://pypi.org/project/questionary/
 "
 
 LICENSE="MIT"
@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/prompt-toolkit[${PYTHON_USEDEP}]
+	>=dev-python/prompt-toolkit-2.0[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest

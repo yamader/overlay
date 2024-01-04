@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <upstream>
-    <remote-id type="pypi">jsonpath-rw</remote-id>
     <remote-id type="github">kennknowles/python-jsonpath-rw</remote-id>
+    <remote-id type="pypi">jsonpath-rw</remote-id>
   </upstream>
 </pkgmetadata>

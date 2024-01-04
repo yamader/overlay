@@ -10,8 +10,8 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="A python library for parsing debian package control headers and version strings"
 HOMEPAGE="
-	https://pypi.org/project/pydpkg/
 	https://github.com/memory/python-dpkg
+	https://pypi.org/project/pydpkg/
 "
 
 LICENSE="Apache-2.0"
@@ -19,11 +19,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/arpy[${PYTHON_USEDEP}]
-	dev-python/six[${PYTHON_USEDEP}]
-	dev-python/PGPy[${PYTHON_USEDEP}]
-	dev-python/zstandard[${PYTHON_USEDEP}]
-	dev-python/cryptography[${PYTHON_USEDEP}]
+	>=dev-python/arpy-2.3.0[${PYTHON_USEDEP}]
+	>=dev-python/six-1.16.0[${PYTHON_USEDEP}]
+	~dev-python/PGPy-0.6.0[${PYTHON_USEDEP}]
+	>=dev-python/zstandard-0.19.0[${PYTHON_USEDEP}]
+	>=dev-python/cryptography-39.0.1[${PYTHON_USEDEP}]
 "
 
 distutils_enable_tests pytest

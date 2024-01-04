@@ -10,8 +10,8 @@ inherit distutils-r1 pypi
 
 DESCRIPTION="Template engine for YAML & JSON"
 HOMEPAGE="
-	https://pypi.org/project/emrichen/
 	https://github.com/con2/emrichen
+	https://pypi.org/project/emrichen/
 "
 
 LICENSE="MIT"
@@ -19,7 +19,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	dev-python/jsonpath-rw[${PYTHON_USEDEP}]
+	~dev-python/jsonpath-rw-1.4.0[${PYTHON_USEDEP}]
 	dev-python/pyyaml[${PYTHON_USEDEP}]
 "
 

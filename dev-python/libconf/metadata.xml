@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <upstream>
-    <remote-id type="pypi">libconf</remote-id>
     <remote-id type="github">ChrisAichinger/python-libconf</remote-id>
+    <remote-id type="pypi">libconf</remote-id>
   </upstream>
 </pkgmetadata>

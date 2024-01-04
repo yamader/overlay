@@ -4,14 +4,14 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( pypy3 python3_{5..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 
 inherit distutils-r1 pypi
 
 DESCRIPTION="Library for accessing \"ar\" files"
 HOMEPAGE="
-	https://pypi.org/project/arpy/
 	https://github.com/viraptor/arpy
+	https://pypi.org/project/arpy/
 "
 
 LICENSE="BSD-2"
