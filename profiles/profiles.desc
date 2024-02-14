@@ -1,1 +1,2 @@
 amd64	clang-desktop	dev
+amd64	musl-llvm-desktop	dev
