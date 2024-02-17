@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <use>
+    <flag name="lsp">Install and build ELS (Erg Language Server)</flag>
+    <flag name="full-repl">Rich REPL experience</flag>
+    <flag name="pretty">Makes the display look better</flag>
+  </use>
+  <upstream>
+    <remote-id type="github">erg-lang/erg</remote-id>
+  </upstream>
+</pkgmetadata>
