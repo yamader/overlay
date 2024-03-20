@@ -1,2 +1,4 @@
-amd64	llvm-desktop	dev
-amd64	musl-llvm-desktop	dev
+amd64	llvm-desktop	exp
+amd64	llvm-desktop-systemd	exp
+amd64	musl-llvm-desktop	exp
+amd64	musl-llvm-desktop-systemd	exp
