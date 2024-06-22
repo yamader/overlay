@@ -6,7 +6,7 @@
 		<name>Gentoo Haskell</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="hackage">base64</remote-id>
-		<remote-id type="github">emilypi/base64</remote-id>
+		<remote-id type="hackage">pandoc-server</remote-id>
+		<remote-id type="github">jgm/pandoc</remote-id>
 	</upstream>
 </pkgmetadata>
