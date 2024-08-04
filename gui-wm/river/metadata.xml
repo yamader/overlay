@@ -6,9 +6,7 @@
 		<name>YamaD</name>
 	</maintainer>
 	<use>
-		<flag name="fish-completion">Enable fish-completion support</flag>
 		<flag name="llvm">Use LLVM Zig backend</flag>
-		<flag name="xwayland">Enable xwayland support</flag>
 	</use>
 	<upstream>
 		<remote-id type="codeberg">river/river</remote-id>
