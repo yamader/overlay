@@ -1,0 +1,20 @@
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -8,3 +8,5 @@
+   value: 'default',
+   description: 'The build profile for Cosmic Theme Editor. One of "default" or "development".'
+ )
++
++option('cargo_home', type: 'string')
+
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -30,7 +30,7 @@
+   message('Building in debug mode')
+ endif
+ 
+-cargo_env = [ 'CARGO_HOME=' + meson.project_build_root() / 'cargo-home' ]
++cargo_env = [ 'CARGO_HOME=' + get_option('cargo_home') ]
+ 
+ cargo_build = custom_target(
+   'cargo-build',
