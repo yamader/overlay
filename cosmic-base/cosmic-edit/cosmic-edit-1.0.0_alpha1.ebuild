@@ -754,7 +754,7 @@ src_prepare() {
 	# libcosmic iced deps
 	rmdir "${WORKDIR}/libcosmic-9e344b15c31ede67e0f79508108aa117d366eefa/iced" || die
 	ln -s "${WORKDIR}/iced-fa817c704dd815cc5723470c49459ad8f81c78f8" \
-	"${WORKDIR}/libcosmic-9e344b15c31ede67e0f79508108aa117d366eefa/iced" || die
+		"${WORKDIR}/libcosmic-9e344b15c31ede67e0f79508108aa117d366eefa/iced" || die
 }
 
 src_configure() {
