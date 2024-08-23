@@ -12,8 +12,8 @@ CRATES="
 	backtrace-on-stack-overflow@0.3.0
 	backtrace@0.3.73
 	bitflags@1.3.2
-	bitflags@2.5.0
-	cc@1.0.99
+	bitflags@2.6.0
+	cc@1.1.8
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
@@ -25,7 +25,7 @@ CRATES="
 	itoa@1.0.11
 	libc@0.2.155
 	lock_api@0.4.12
-	log@0.4.21
+	log@0.4.22
 	lsp-types@0.93.2
 	memchr@2.7.4
 	memoffset@0.6.5
@@ -34,36 +34,36 @@ CRATES="
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
-	object@0.36.0
+	object@0.36.3
 	once_cell@1.19.0
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
-	portable-atomic@1.6.0
-	proc-macro2@1.0.85
+	portable-atomic@1.7.0
+	proc-macro2@1.0.86
 	pyo3-build-config@0.21.2
 	pyo3-ffi@0.21.2
 	pyo3-macros-backend@0.21.2
 	pyo3-macros@0.21.2
 	pyo3@0.21.2
 	quote@1.0.36
-	redox_syscall@0.5.2
+	redox_syscall@0.5.3
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.203
-	serde_derive@1.0.203
-	serde_json@1.0.117
+	serde@1.0.205
+	serde_derive@1.0.205
+	serde_json@1.0.122
 	serde_repr@0.1.19
-	signal-hook-mio@0.2.3
+	signal-hook-mio@0.2.4
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
 	smallvec@1.13.2
 	syn@1.0.109
-	syn@2.0.66
-	target-lexicon@0.12.14
+	syn@2.0.72
+	target-lexicon@0.12.16
 	thread_local@1.1.8
-	tinyvec@1.6.0
+	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
 	unicode-bidi@0.3.15
 	unicode-ident@1.0.12
@@ -77,22 +77,22 @@ CRATES="
 	winapi@0.3.9
 	windows-sys@0.48.0
 	windows-targets@0.48.5
-	windows-targets@0.52.5
+	windows-targets@0.52.6
 	windows_aarch64_gnullvm@0.48.5
-	windows_aarch64_gnullvm@0.52.5
+	windows_aarch64_gnullvm@0.52.6
 	windows_aarch64_msvc@0.48.5
-	windows_aarch64_msvc@0.52.5
+	windows_aarch64_msvc@0.52.6
 	windows_i686_gnu@0.48.5
-	windows_i686_gnu@0.52.5
-	windows_i686_gnullvm@0.52.5
+	windows_i686_gnu@0.52.6
+	windows_i686_gnullvm@0.52.6
 	windows_i686_msvc@0.48.5
-	windows_i686_msvc@0.52.5
+	windows_i686_msvc@0.52.6
 	windows_x86_64_gnu@0.48.5
-	windows_x86_64_gnu@0.52.5
+	windows_x86_64_gnu@0.52.6
 	windows_x86_64_gnullvm@0.48.5
-	windows_x86_64_gnullvm@0.52.5
+	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.48.5
-	windows_x86_64_msvc@0.52.5
+	windows_x86_64_msvc@0.52.6
 "
 
 inherit cargo
@@ -124,4 +124,9 @@ src_configure() {
 		$(usev pretty)
 	)
 	cargo_src_configure
+}
+
+src_test() {
+	export ERG_PATH="${HOME}/.erg"
+	cargo_src_test
 }
