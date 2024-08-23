@@ -611,11 +611,9 @@ src_prepare() {
 	sed -i -e "s|git = \"https://github.com/pop-os/libcosmic\"|\
 			path = \"${WORKDIR}/libcosmic-bfbff0773a0a6e067c931bee0ad169b143bc45de/iced/futures\"|g" \
 		"${WORKDIR}/cosmic-settings-subscriptions-21cc79434fa24f1fbd6dc4e8d394aa51d5ee12d9/Cargo.toml" || die
+}
 
-	# iced dnd deps
-	local window_clipboard="${WORKDIR}/window_clipboard-7c59b07b9172d8e0401f7e06609e1050575309c9"
-	sed -i -e "s|window_clipboard .*|window_clipboard = { path = \"${window_clipboard}\" }|;
-			s|dnd .*|dnd = { path = \"${window_clipboard}/dnd\" }|;
-			s|mime .*|mime = { path = \"${window_clipboard}/mime\" }|" \
-		"${WORKDIR}/iced-4c609e776a7721bddb6d50b60096f4d1f655491c/Cargo.toml" || die
+src_install() {
+	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."
+	emake prefix="${D}/usr" install
 }
