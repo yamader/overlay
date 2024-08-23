@@ -1,0 +1,27 @@
+--- a/src/main.rs
++++ b/src/main.rs
+@@ -21,7 +21,6 @@
+ use futures_util::StreamExt;
+ use launch_pad::{process::Process, ProcessManager};
+ use service::SessionRequest;
+-use systemd::{is_systemd_used, spawn_scope};
+ use tokio::{
+ 	net::UnixStream,
+ 	sync::{
+@@ -380,13 +379,13 @@
+ 					.instrument(stderr_span)
+ 				})
+ 				.with_on_start(move |pman, pkey, _will_restart| {
+-					#[cfg(feature = "systemd")]
+ 					{
+ 						async move {
+-							if *is_systemd_used() {
++							#[cfg(feature = "systemd")]
++							if *systemd::is_systemd_used() {
+ 								if let Ok((innr_cmd, Some(pid))) = pman.get_exe_and_pid(pkey).await
+ 								{
+-									if let Err(err) = spawn_scope(innr_cmd.clone(), vec![pid]).await
++									if let Err(err) = systemd::spawn_scope(innr_cmd.clone(), vec![pid]).await
+ 									{
+ 										warn!(
+ 													"Failed to spawn scope for {}. Creating transient unit failed with {}",
