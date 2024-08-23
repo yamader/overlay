@@ -3,12 +3,12 @@
 
 EAPI=8
 
-COMMIT="0f2f16dc39ff1281a56680e37719e98a1bc8cb99"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Wallpapers for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-wallpapers"
-SRC_URI="https://github.com/pop-os/cosmic-wallpapers/archive/${COMMIT}/${P}.tar.gz"
-S="${WORKDIR}/${PN}-${COMMIT}"
+SRC_URI="https://github.com/pop-os/cosmic-wallpapers/archive/${MY_PV}/${P}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="all-rights-reserved"
 SLOT="0"

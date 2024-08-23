@@ -716,15 +716,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo xdg
 
-COMMIT="df5d10936c5a1cc16e231b92221eae7c73ed9da4"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Text Editor application for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-edit"
 SRC_URI="
-	https://github.com/pop-os/cosmic-edit/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-edit/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses

@@ -733,17 +733,17 @@ declare -A GIT_CRATES=(
 
 inherit cargo xdg
 
-COMMIT="41c1e7cfd0779db6005fc64798ac75b630332678"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 COMMIT_PW="2ad12181ffc02c71a1cbd0b1d49eecd04cdf8f26"
 
 DESCRIPTION="XDG desktop portal for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/xdg-desktop-portal-cosmic"
 SRC_URI="
-	https://github.com/pop-os/xdg-desktop-portal-cosmic/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/xdg-desktop-portal-cosmic/archive/${MY_PV}/${P}.tar.gz
 	https://gitlab.freedesktop.org/pipewire/pipewire-rs/-/archive/${COMMIT_PW}/pipewire-rs-${COMMIT_PW}.tar.bz2
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3+"
 # Dependent crate licenses

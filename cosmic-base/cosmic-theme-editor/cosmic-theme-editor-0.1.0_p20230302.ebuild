@@ -211,15 +211,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo meson xdg
 
-COMMIT="024bd9b3e49685a0083d744bf823072b58cc4957"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Theme editor for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-theme-editor"
 SRC_URI="
-	https://github.com/pop-os/cosmic-theme-editor/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-theme-editor/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 PATCHES=(
 	"${FILESDIR}/${P}-cargo_home.patch"

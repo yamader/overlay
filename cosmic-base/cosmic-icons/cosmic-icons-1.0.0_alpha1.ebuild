@@ -5,12 +5,12 @@ EAPI=8
 
 inherit xdg
 
-COMMIT="f93dcdfa1060c2cf3f8cf0b56b0338292edcafa5"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Icons for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-icons"
-SRC_URI="https://github.com/pop-os/cosmic-icons/archive/${COMMIT}/${P}.tar.gz"
-S="${WORKDIR}/${PN}-${COMMIT}"
+SRC_URI="https://github.com/pop-os/cosmic-icons/archive/${MY_PV}/${P}.tar.gz"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="CC-BY-SA-4.0"
 SLOT="0"

@@ -141,15 +141,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo
 
-COMMIT="71fabbb382fa8cf750f50fb77c4ba014bff80056"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="RandR for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-randr"
 SRC_URI="
-	https://github.com/pop-os/cosmic-randr/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-randr/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="MPL-2.0"
 # Dependent crate licenses

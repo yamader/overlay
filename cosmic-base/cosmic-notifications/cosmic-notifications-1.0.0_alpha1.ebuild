@@ -609,15 +609,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo xdg
 
-COMMIT="e9abef567a928cfa88949dbbdb5c49bb87c2f6a0"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Notifications for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-notifications"
 SRC_URI="
-	https://github.com/pop-os/cosmic-notifications/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-notifications/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses

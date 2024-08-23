@@ -690,17 +690,17 @@ declare -A GIT_CRATES=(
 
 inherit cargo xdg
 
-COMMIT="be808b56cf24d03fc99cf44b0885078a81a16523"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 COMMIT_LIBC="5eff703b923d3e1b042e91bc67409cca961f3976"
 
 DESCRIPTION="Terminal application for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-term"
 SRC_URI="
-	https://github.com/pop-os/cosmic-term/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-term/archive/${MY_PV}/${P}.tar.gz
 	https://gitlab.redox-os.org/redox-os/liblibc/-/archive/${COMMIT_LIBC}/liblibc-${COMMIT_LIBC}.tar.bz2
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses

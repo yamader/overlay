@@ -200,15 +200,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo
 
-COMMIT="c3de3d24dd200d5f8a19a26de56590472f461574"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Session manager for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-session"
 SRC_URI="
-	https://github.com/pop-os/cosmic-session/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-session/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 PATCHES=(
 	"${FILESDIR}/${P}-no-systemd.patch"

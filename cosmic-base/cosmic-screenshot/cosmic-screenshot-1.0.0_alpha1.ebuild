@@ -210,15 +210,15 @@ CRATES="
 
 inherit cargo xdg
 
-COMMIT="031eb6686196e3dd4d7876ae30572522edc110b9"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Screenshot utility for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-screenshot"
 SRC_URI="
-	https://github.com/pop-os/cosmic-screenshot/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-screenshot/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses

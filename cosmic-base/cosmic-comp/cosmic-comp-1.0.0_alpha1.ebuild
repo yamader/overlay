@@ -667,15 +667,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo
 
-COMMIT="4748916ff91c50c16d84f4a777db1e1b4d90c90c"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="Compositor for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-comp"
 SRC_URI="
-	https://github.com/pop-os/cosmic-comp/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-comp/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 PATCHES=(
 	"${FILESDIR}/${P}-cargo-deps.patch"

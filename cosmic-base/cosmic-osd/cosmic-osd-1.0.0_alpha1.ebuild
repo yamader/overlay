@@ -567,15 +567,15 @@ declare -A GIT_CRATES=(
 
 inherit cargo
 
-COMMIT="27fc5e5ba4bbed119a1fc85f840db0ade13dde85"
+MY_PV="epoch-${PV/_alpha/-alpha.}"
 
 DESCRIPTION="OSD for the COSMIC desktop environment"
 HOMEPAGE="https://github.com/pop-os/cosmic-osd"
 SRC_URI="
-	https://github.com/pop-os/cosmic-osd/archive/${COMMIT}/${P}.tar.gz
+	https://github.com/pop-os/cosmic-osd/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${PN}-${COMMIT}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3+"
 # Dependent crate licenses
