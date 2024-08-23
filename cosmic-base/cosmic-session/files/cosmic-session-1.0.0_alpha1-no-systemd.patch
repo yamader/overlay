@@ -8,7 +8,15 @@
  use tokio::{
  	net::UnixStream,
  	sync::{
-@@ -380,13 +379,13 @@
+@@ -42,6 +41,7 @@
+ async fn main() -> Result<()> {
+ 	color_eyre::install().wrap_err("failed to install color_eyre error handler")?;
+ 
++	#[cfg(feature = "systemd")]
+ 	tracing_subscriber::registry()
+ 		.with(tracing_journald::layer().wrap_err("failed to connect to journald")?)
+ 		.with(fmt::layer())
+@@ -380,13 +380,13 @@
  					.instrument(stderr_span)
  				})
  				.with_on_start(move |pman, pkey, _will_restart| {
