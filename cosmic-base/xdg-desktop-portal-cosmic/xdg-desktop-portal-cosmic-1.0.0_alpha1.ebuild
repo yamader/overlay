@@ -764,7 +764,6 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
-	dev-build/just
 	virtual/pkgconfig
 "
 

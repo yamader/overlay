@@ -731,11 +731,12 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+IUSE="+flatpak +logind +packagekit"
 
 DEPEND="
 	dev-libs/openssl
-	sys-apps/flatpak
 	x11-libs/libxkbcommon
+	flatpak? ( sys-apps/flatpak )
 "
 RDEPEND="
 	${DEPEND}
@@ -757,6 +758,16 @@ src_prepare() {
 	rmdir "${WORKDIR}/libcosmic-a5996b4e90f6aad943b7c61b961fae5edacd7697/iced" || die
 	ln -s "${WORKDIR}/iced-fa817c704dd815cc5723470c49459ad8f81c78f8" \
 		"${WORKDIR}/libcosmic-a5996b4e90f6aad943b7c61b961fae5edacd7697/iced" || die
+}
+
+src_configure() {
+	local myfeatures=(
+		$(usev flatpak)
+		$(usev logind)
+		$(usev packagekit)
+		wgpu # deafault features
+	)
+	cargo_src_configure --no-default-features
 }
 
 src_install() {

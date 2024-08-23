@@ -810,6 +810,7 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 
+# Dependencies have changed considerably since 1.0.0-alpha1
 DEPEND="
 	dev-libs/expat
 	dev-libs/libinput

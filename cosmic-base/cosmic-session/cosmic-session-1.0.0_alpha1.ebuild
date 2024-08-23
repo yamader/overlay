@@ -215,6 +215,7 @@ LICENSE="GPL-3"
 LICENSE+=" Apache-2.0 BSD MIT MPL-2.0 Unicode-DFS-2016 ZLIB"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+IUSE="systemd"
 
 # todo: pop-fonts
 RDEPEND="
@@ -242,6 +243,13 @@ BDEPEND="
 "
 
 QA_FLAGS_IGNORED="usr/bin/cosmic-session"
+
+src_configure() {
+	local myfeatures=(
+		$(usev systemd)
+	)
+	cargo_src_configure --no-default-features
+}
 
 src_install() {
 	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."

@@ -614,6 +614,7 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
+IUSE="+logind +networkmanager +upower"
 
 DEPEND="
 	dev-libs/libinput
@@ -624,7 +625,6 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
-	app-shells/bash
 	cosmic-base/cosmic-comp
 	sys-apps/dbus
 "
@@ -648,7 +648,12 @@ src_prepare() {
 
 src_configure() {
 	export ECARGO_EXTRA_ARGS="--all"
-	cargo_src_configure
+	local myfeatures=(
+		$(usev logind)
+		$(usev networkmanager)
+		$(usev upower)
+	)
+	cargo_src_configure --no-default-features
 }
 
 src_install() {

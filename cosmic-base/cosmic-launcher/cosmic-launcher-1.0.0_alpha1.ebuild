@@ -672,7 +672,10 @@ DEPEND="
 	dev-util/intltool
 	x11-libs/libxkbcommon
 "
-RDEPEND="${DEPEND}"
+RDEPEND="
+	${DEPEND}
+	gui-apps/pop-launcher
+"
 BDEPEND="
 	dev-build/just
 	virtual/pkgconfig

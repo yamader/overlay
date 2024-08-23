@@ -689,13 +689,12 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="systemd"
+IUSE="debug systemd"
 
 DEPEND="
 	dev-libs/libinput
 	dev-libs/wayland
 	media-libs/fontconfig
-	media-libs/libglvnd
 	media-libs/mesa
 	sys-auth/seatd
 	virtual/libudev
@@ -727,6 +726,7 @@ src_prepare() {
 
 src_configure() {
 	local myfeatures=(
+		$(usev debug)
 		$(usev systemd)
 	)
 	cargo_src_configure --no-default-features
@@ -734,5 +734,5 @@ src_configure() {
 
 src_install() {
 	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."
-	make prefix="${D}/usr" install
+	emake prefix="${D}/usr" install
 }
