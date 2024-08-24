@@ -723,6 +723,10 @@ SRC_URI="
 "
 S="${WORKDIR}/${PN}-${MY_PV}"
 
+PATCHES=(
+	"${FILESDIR}/${P}-without-logind.patch"
+)
+
 LICENSE="GPL-3"
 # Dependent crate licenses
 LICENSE+="
@@ -731,12 +735,13 @@ LICENSE+="
 "
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="+flatpak +logind +packagekit"
+IUSE="+flatpak +logind"
 
 DEPEND="
 	dev-libs/openssl
 	x11-libs/libxkbcommon
 	flatpak? ( sys-apps/flatpak )
+	logind? ( || ( sys-apps/systemd sys-auth/elogind ) )
 "
 RDEPEND="
 	${DEPEND}
@@ -764,8 +769,8 @@ src_configure() {
 	local myfeatures=(
 		$(usev flatpak)
 		$(usev logind)
-		$(usev packagekit)
-		wgpu # deafault features
+		# deafault features
+		wgpu
 	)
 	cargo_src_configure --no-default-features
 }

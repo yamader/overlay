@@ -5,6 +5,10 @@
 		<email>dev@dyama.net</email>
 		<name>Daichi Yamamoto</name>
 	</maintainer>
+	<use>
+		<flag name="flatpak">Enable support for flatpak</flag>
+		<flag name="logind">Enable support for logind (sleep/shutdown inhibit)</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">pop-os/cosmic-store</remote-id>
 	</upstream>

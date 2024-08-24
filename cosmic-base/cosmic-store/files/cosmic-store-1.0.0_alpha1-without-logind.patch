@@ -1,0 +1,29 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,7 +39,7 @@ libflatpak = { version = "0.5", optional = true }
+ # logind feature (for inhibiting suspend/restart/shutdown)
+ logind-zbus = { version = "4", optional = true }
+ nix = { version = "0.26", features = ["user"], optional = true }
+-zbus = { version = "4", optional = true }
++zbus = { version = "4" }
+ # packagekit feature
+ packagekit-zbus = { version = "0.1", optional = true }
+ 
+@@ -55,7 +55,7 @@ features = ["serde"]
+ [features]
+ default = ["flatpak", "logind", "packagekit", "wgpu"]
+ flatpak = ["dep:libflatpak"]
+-logind = ["dep:logind-zbus", "dep:nix", "dep:zbus"]
++logind = ["dep:logind-zbus", "dep:nix"]
+ packagekit = ["dep:packagekit-zbus"]
+ wgpu = ["libcosmic/wgpu"]
+ 
+--- a/src/logind.rs
++++ b/src/logind.rs
+@@ -25,5 +25,5 @@ pub async fn inhibit() -> zbus::Result<Vec<OwnedFd>> {
+ 
+ #[cfg(not(feature = "logind"))]
+ pub async fn inhibit() -> zbus::Result<Vec<OwnedFd>> {
+-    Vec::new()
++    Ok(Vec::new())
+ }

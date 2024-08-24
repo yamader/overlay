@@ -606,6 +606,10 @@ SRC_URI="
 "
 S="${WORKDIR}/${PN}-${MY_PV}"
 
+PATCHES=(
+	"${FILESDIR}/${P}-without-logind.patch"
+)
+
 LICENSE="GPL-3"
 # Dependent crate licenses
 LICENSE+="
@@ -622,10 +626,14 @@ DEPEND="
 	sys-devel/clang
 	sys-libs/pam
 	x11-libs/libxkbcommon
+	logind? ( || ( sys-apps/systemd sys-auth/elogind ) )
 "
 RDEPEND="
 	${DEPEND}
+	acct-group/cosmic-greeter
+	acct-user/cosmic-greeter
 	cosmic-base/cosmic-comp
+	gui-libs/greetd
 	sys-apps/dbus
 "
 BDEPEND="

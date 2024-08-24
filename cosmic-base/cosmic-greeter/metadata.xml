@@ -5,6 +5,9 @@
 		<email>dev@dyama.net</email>
 		<name>Daichi Yamamoto</name>
 	</maintainer>
+	<use>
+		<flag name="logind">Enable support for logind</flag>
+	</use>
 	<upstream>
 		<remote-id type="github">pop-os/cosmic-greeter</remote-id>
 	</upstream>
