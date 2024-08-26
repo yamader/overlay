@@ -733,6 +733,6 @@ src_prepare() {
 src_install() {
 	just \
 		prefix="${D}/usr" \
-		cargo-target-dir="$(cargo_target_dir)/.." \
+		targetdir="$(cargo_target_dir)/.." \
 		install || die
 }
