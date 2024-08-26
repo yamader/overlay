@@ -173,7 +173,7 @@ QA_FLAGS_IGNORED="usr/bin/cosmic-randr"
 src_install() {
 	just \
 		prefix="${D}/usr" \
-		cargo-target-dir="$(cargo_target_dir)/.." \
+		bin-src="$(cargo_target_dir)/${PN}" \
 		install || die
 
 	einstalldocs
