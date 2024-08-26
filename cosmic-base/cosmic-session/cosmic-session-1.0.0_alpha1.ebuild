@@ -221,7 +221,6 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE="systemd"
 
-# todo: pop-fonts
 RDEPEND="
 	cosmic-base/cosmic-app-library
 	cosmic-base/cosmic-applets
@@ -239,6 +238,9 @@ RDEPEND="
 	cosmic-base/cosmic-settings-daemon
 	cosmic-base/cosmic-workspaces
 	cosmic-base/xdg-desktop-portal-cosmic
+	media-fonts/fira-mono
+	media-fonts/fira-sans
+	media-fonts/roboto
 	sys-power/switcheroo-control
 	x11-base/xwayland
 "
@@ -256,6 +258,8 @@ src_configure() {
 }
 
 src_install() {
-	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."
-	just prefix="${D}/usr" install || die
+	just \
+		prefix="${D}/usr" \
+		cargo-target-dir="$(cargo_target_dir)/.." \
+		install || die
 }

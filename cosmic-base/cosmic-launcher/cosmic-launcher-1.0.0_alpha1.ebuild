@@ -695,8 +695,10 @@ src_prepare() {
 }
 
 src_install() {
-	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."
-	just prefix="${D}/usr" install || die
+	just \
+		prefix="${D}/usr" \
+		cargo-target-dir="$(cargo_target_dir)/.." \
+		install || die
 
 	einstalldocs
 }

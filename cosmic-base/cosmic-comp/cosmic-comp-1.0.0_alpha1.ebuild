@@ -733,6 +733,8 @@ src_configure() {
 }
 
 src_install() {
-	export CARGO_TARGET_DIR="$(cargo_target_dir)/.."
-	emake prefix="${D}/usr" install
+	emake \
+		prefix="${D}/usr" \
+		CARGO_TARGET_DIR="$(cargo_target_dir)/.." \
+		install
 }
