@@ -690,7 +690,7 @@ SRC_URI="
 	https://github.com/pop-os/cosmic-applets/archive/${MY_PV}/${P}.tar.gz
 	${CARGO_CRATE_URIS}
 "
-S="${WORKDIR}/${P}-${MY_PV}"
+S="${WORKDIR}/${PN}-${MY_PV}"
 
 LICENSE="GPL-3"
 # Dependent crate licenses
