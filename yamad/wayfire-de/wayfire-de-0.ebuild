@@ -11,9 +11,11 @@ SLOT="0"
 
 RDEPEND="
 	gui-apps/azote
+	gui-apps/swaybg
 	gui-apps/swayidle
 	gui-apps/swaylock-effects
 	gui-apps/swaync
 	gui-apps/yambar
+	gui-libs/wayfire-plugins-extra
 	gui-wm/wayfire
 "

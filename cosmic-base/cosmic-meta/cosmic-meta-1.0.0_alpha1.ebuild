@@ -8,6 +8,7 @@ HOMEPAGE="https://system76.com/cosmic"
 
 LICENSE="metapackage"
 SLOT="0"
+KEYWORD="~amd64 ~arm64"
 
 RDEPEND="
 	cosmic-base/cosmic-edit
