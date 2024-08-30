@@ -8,9 +8,8 @@ HOMEPAGE="https://system76.com/cosmic"
 
 LICENSE="metapackage"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64"
 
-DEPEND="
+RDEPEND="
 	cosmic-base/cosmic-edit
 	cosmic-base/cosmic-files
 	cosmic-base/cosmic-session
@@ -20,4 +19,3 @@ DEPEND="
 	cosmic-base/cosmic-wallpapers
 	gui-apps/pop-launcher
 "
-RDEPEND="${DEPEND}"
