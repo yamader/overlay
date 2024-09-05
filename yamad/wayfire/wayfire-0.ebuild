@@ -3,19 +3,13 @@
 
 EAPI=8
 
-DESCRIPTION="Wayfire DE"
+DESCRIPTION="Wayfire metapackage"
 HOMEPAGE="https://yamad.me"
 
 LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	gui-apps/azote
-	gui-apps/swaybg
-	gui-apps/swayidle
-	gui-apps/swaylock-effects
-	gui-apps/swaync
-	gui-apps/yambar
 	gui-libs/wayfire-plugins-extra
 	gui-wm/wayfire
 "
