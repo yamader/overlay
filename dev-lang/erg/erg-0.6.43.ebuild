@@ -13,7 +13,7 @@ CRATES="
 	backtrace@0.3.73
 	bitflags@1.3.2
 	bitflags@2.6.0
-	cc@1.1.8
+	cc@1.1.15
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
@@ -23,7 +23,7 @@ CRATES="
 	idna@0.5.0
 	indoc@2.0.5
 	itoa@1.0.11
-	libc@0.2.155
+	libc@0.2.158
 	lock_api@0.4.12
 	log@0.4.22
 	lsp-types@0.93.2
@@ -34,7 +34,7 @@ CRATES="
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
-	object@0.36.3
+	object@0.36.4
 	once_cell@1.19.0
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
@@ -46,21 +46,22 @@ CRATES="
 	pyo3-macros-backend@0.21.2
 	pyo3-macros@0.21.2
 	pyo3@0.21.2
-	quote@1.0.36
+	quote@1.0.37
 	redox_syscall@0.5.3
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.205
-	serde_derive@1.0.205
-	serde_json@1.0.122
+	serde@1.0.209
+	serde_derive@1.0.209
+	serde_json@1.0.127
 	serde_repr@0.1.19
+	shlex@1.3.0
 	signal-hook-mio@0.2.4
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
 	smallvec@1.13.2
 	syn@1.0.109
-	syn@2.0.72
+	syn@2.0.77
 	target-lexicon@0.12.16
 	thread_local@1.1.8
 	tinyvec@1.8.0
@@ -68,16 +69,23 @@ CRATES="
 	unicode-bidi@0.3.15
 	unicode-ident@1.0.12
 	unicode-normalization@0.1.23
-	unicode-xid@0.2.4
+	unicode-xid@0.2.5
 	unindent@0.2.3
 	url@2.5.2
+	w-boson@0.1.0
 	wasi@0.11.0+wasi-snapshot-preview1
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-x86_64-pc-windows-gnu@0.4.0
 	winapi@0.3.9
+	windows-core@0.58.0
+	windows-implement@0.58.0
+	windows-interface@0.58.0
+	windows-result@0.2.0
+	windows-strings@0.1.0
 	windows-sys@0.48.0
 	windows-targets@0.48.5
 	windows-targets@0.52.6
+	windows@0.58.0
 	windows_aarch64_gnullvm@0.48.5
 	windows_aarch64_gnullvm@0.52.6
 	windows_aarch64_msvc@0.48.5
