@@ -6,40 +6,40 @@
 EAPI=8
 
 CRATES="
-	addr2line@0.22.0
-	adler@1.0.2
-	autocfg@1.3.0
+	addr2line@0.24.1
+	adler2@2.0.0
+	autocfg@1.4.0
 	backtrace-on-stack-overflow@0.3.0
-	backtrace@0.3.73
+	backtrace@0.3.74
 	bitflags@1.3.2
 	bitflags@2.6.0
-	cc@1.1.15
+	cc@1.1.23
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
 	form_urlencoded@1.2.1
-	gimli@0.29.0
+	gimli@0.31.0
 	heck@0.4.1
 	idna@0.5.0
 	indoc@2.0.5
 	itoa@1.0.11
-	libc@0.2.158
+	libc@0.2.159
 	lock_api@0.4.12
 	log@0.4.22
 	lsp-types@0.93.2
 	memchr@2.7.4
 	memoffset@0.6.5
 	memoffset@0.9.1
-	miniz_oxide@0.7.4
+	miniz_oxide@0.8.0
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
 	object@0.36.4
-	once_cell@1.19.0
+	once_cell@1.20.1
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
-	portable-atomic@1.7.0
+	portable-atomic@1.9.0
 	proc-macro2@1.0.86
 	pyo3-build-config@0.21.2
 	pyo3-ffi@0.21.2
@@ -47,13 +47,13 @@ CRATES="
 	pyo3-macros@0.21.2
 	pyo3@0.21.2
 	quote@1.0.37
-	redox_syscall@0.5.3
+	redox_syscall@0.5.7
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.209
-	serde_derive@1.0.209
-	serde_json@1.0.127
+	serde@1.0.210
+	serde_derive@1.0.210
+	serde_json@1.0.128
 	serde_repr@0.1.19
 	shlex@1.3.0
 	signal-hook-mio@0.2.4
@@ -61,15 +61,15 @@ CRATES="
 	signal-hook@0.3.17
 	smallvec@1.13.2
 	syn@1.0.109
-	syn@2.0.77
+	syn@2.0.79
 	target-lexicon@0.12.16
 	thread_local@1.1.8
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
 	unicode-bidi@0.3.15
-	unicode-ident@1.0.12
-	unicode-normalization@0.1.23
-	unicode-xid@0.2.5
+	unicode-ident@1.0.13
+	unicode-normalization@0.1.24
+	unicode-xid@0.2.6
 	unindent@0.2.3
 	url@2.5.2
 	w-boson@0.1.0
