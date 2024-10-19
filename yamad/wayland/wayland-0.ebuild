@@ -12,10 +12,12 @@ SLOT="0"
 # swaybg is for azote
 RDEPEND="
 	gui-apps/azote
+	gui-apps/kanshi
 	gui-apps/swaybg
 	gui-apps/swayidle
 	gui-apps/swaylock-effects
 	gui-apps/wdisplays
+	gui-apps/wlr-randr
 	gui-apps/yambar
 	x11-misc/dunst
 "

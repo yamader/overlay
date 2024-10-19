@@ -13,6 +13,7 @@ RDEPEND="
 	app-admin/doas
 	app-admin/sudo
 	app-admin/syslog-ng
+	dev-libs/light
 	media-gfx/minegrub-theme
 	net-dns/avahi
 	net-misc/chrony

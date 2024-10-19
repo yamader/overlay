@@ -38,6 +38,7 @@ RDEPEND="
 	dev-scheme/gauche
 	dev-scheme/racket
 	dev-scheme/sagittarius
+	dev-util/bcc
 	sci-electronics/iverilog
 	sci-mathematics/coq
 	sci-mathematics/lean

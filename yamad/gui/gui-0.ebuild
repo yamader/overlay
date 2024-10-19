@@ -39,5 +39,6 @@ RDEPEND="
 	x11-themes/vimix-xcursors
 	xfce-base/thunar
 	xfce-base/thunar-volman
+	xfce-base/tumbler
 	video_cards_nvidia? ( media-libs/nvidia-vaapi-driver )
 "

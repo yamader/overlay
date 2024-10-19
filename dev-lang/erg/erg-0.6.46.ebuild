@@ -6,19 +6,19 @@
 EAPI=8
 
 CRATES="
-	addr2line@0.24.1
+	addr2line@0.24.2
 	adler2@2.0.0
 	autocfg@1.4.0
 	backtrace-on-stack-overflow@0.3.0
 	backtrace@0.3.74
 	bitflags@1.3.2
 	bitflags@2.6.0
-	cc@1.1.23
+	cc@1.1.30
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
 	form_urlencoded@1.2.1
-	gimli@0.31.0
+	gimli@0.31.1
 	heck@0.4.1
 	idna@0.5.0
 	indoc@2.0.5
@@ -34,13 +34,13 @@ CRATES="
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
-	object@0.36.4
-	once_cell@1.20.1
+	object@0.36.5
+	once_cell@1.20.2
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
 	portable-atomic@1.9.0
-	proc-macro2@1.0.86
+	proc-macro2@1.0.87
 	pyo3-build-config@0.21.2
 	pyo3-ffi@0.21.2
 	pyo3-macros-backend@0.21.2
@@ -66,7 +66,7 @@ CRATES="
 	thread_local@1.1.8
 	tinyvec@1.8.0
 	tinyvec_macros@0.1.1
-	unicode-bidi@0.3.15
+	unicode-bidi@0.3.17
 	unicode-ident@1.0.13
 	unicode-normalization@0.1.24
 	unicode-xid@0.2.6
