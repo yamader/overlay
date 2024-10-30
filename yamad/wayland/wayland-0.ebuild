@@ -11,6 +11,7 @@ SLOT="0"
 
 # swaybg is for azote
 RDEPEND="
+	app-misc/wayland-utils
 	gui-apps/azote
 	gui-apps/kanshi
 	gui-apps/swaybg

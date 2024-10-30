@@ -29,7 +29,6 @@ RDEPEND="
 	dev-embedded/platformio
 	dev-go/lichen
 	dev-haskell/cabal-install
-	dev-haskell/stack
 	dev-java/gradle-bin
 	dev-java/maven-bin
 	dev-lua/luarocks
@@ -42,6 +41,8 @@ RDEPEND="
 	dev-python/isort
 	dev-python/numpy
 	dev-python/tox
+	dev-python/uv
+	dev-util/bear
 	dev-util/ccache
 	dev-util/dcd
 	dev-util/dfmt
