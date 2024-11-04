@@ -10,7 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	app-arch/p7zip
+	app-arch/7zip
 	app-arch/unrar
 	app-crypt/gnupg
 	app-editors/emacs

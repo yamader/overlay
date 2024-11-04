@@ -39,6 +39,7 @@ RDEPEND="
 	dev-python/black
 	dev-python/flake8
 	dev-python/isort
+	dev-python/mypy
 	dev-python/numpy
 	dev-python/tox
 	dev-python/uv
