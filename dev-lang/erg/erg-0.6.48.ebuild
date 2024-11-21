@@ -13,17 +13,30 @@ CRATES="
 	backtrace@0.3.74
 	bitflags@1.3.2
 	bitflags@2.6.0
-	cc@1.1.34
+	cc@1.2.1
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
+	displaydoc@0.2.5
 	form_urlencoded@1.2.1
 	gimli@0.31.1
 	heck@0.4.1
-	idna@0.5.0
+	icu_collections@1.5.0
+	icu_locid@1.5.0
+	icu_locid_transform@1.5.0
+	icu_locid_transform_data@1.5.0
+	icu_normalizer@1.5.0
+	icu_normalizer_data@1.5.0
+	icu_properties@1.5.1
+	icu_properties_data@1.5.0
+	icu_provider@1.5.0
+	icu_provider_macros@1.5.0
+	idna@1.0.3
+	idna_adapter@1.2.0
 	indoc@2.0.5
-	itoa@1.0.11
-	libc@0.2.161
+	itoa@1.0.12
+	libc@0.2.164
+	litemap@0.7.3
 	lock_api@0.4.12
 	log@0.4.22
 	lsp-types@0.93.2
@@ -51,27 +64,28 @@ CRATES="
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.214
-	serde_derive@1.0.214
-	serde_json@1.0.132
+	serde@1.0.215
+	serde_derive@1.0.215
+	serde_json@1.0.133
 	serde_repr@0.1.19
 	shlex@1.3.0
 	signal-hook-mio@0.2.4
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
 	smallvec@1.13.2
+	stable_deref_trait@1.2.0
 	syn@1.0.109
 	syn@2.0.87
+	synstructure@0.13.1
 	target-lexicon@0.12.16
 	thread_local@1.1.8
-	tinyvec@1.8.0
-	tinyvec_macros@0.1.1
-	unicode-bidi@0.3.17
-	unicode-ident@1.0.13
-	unicode-normalization@0.1.24
+	tinystr@0.7.6
+	unicode-ident@1.0.14
 	unicode-xid@0.2.6
 	unindent@0.2.3
-	url@2.5.2
+	url@2.5.3
+	utf16_iter@1.0.5
+	utf8_iter@1.0.4
 	w-boson@0.1.0
 	wasi@0.11.0+wasi-snapshot-preview1
 	winapi-i686-pc-windows-gnu@0.4.0
@@ -101,6 +115,14 @@ CRATES="
 	windows_x86_64_gnullvm@0.52.6
 	windows_x86_64_msvc@0.48.5
 	windows_x86_64_msvc@0.52.6
+	write16@1.0.0
+	writeable@0.5.5
+	yoke-derive@0.7.4
+	yoke@0.7.4
+	zerofrom-derive@0.1.4
+	zerofrom@0.1.4
+	zerovec-derive@0.10.3
+	zerovec@0.10.4
 "
 
 inherit cargo
@@ -115,7 +137,7 @@ SRC_URI="
 LICENSE="|| ( Apache-2.0 MIT )"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0-with-LLVM-exceptions MIT Unicode-DFS-2016
+	Apache-2.0-with-LLVM-exceptions MIT Unicode-3.0
 	|| ( Apache-2.0 Boost-1.0 )
 "
 SLOT="0"
