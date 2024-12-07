@@ -12,7 +12,6 @@ SLOT="0"
 # qt5compat is for musescore
 RDEPEND="
 	app-crypt/veracrypt
-	app-crypt/yubikey-manager-qt
 	dev-qt/qt5compat
 	media-gfx/fontforge
 	media-gfx/gimp
