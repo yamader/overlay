@@ -13,7 +13,7 @@ CRATES="
 	backtrace@0.3.74
 	bitflags@1.3.2
 	bitflags@2.6.0
-	cc@1.2.1
+	cc@1.2.4
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
@@ -34,9 +34,9 @@ CRATES="
 	idna@1.0.3
 	idna_adapter@1.2.0
 	indoc@2.0.5
-	itoa@1.0.12
-	libc@0.2.164
-	litemap@0.7.3
+	itoa@1.0.14
+	libc@0.2.168
+	litemap@0.7.4
 	lock_api@0.4.12
 	log@0.4.22
 	lsp-types@0.93.2
@@ -52,20 +52,20 @@ CRATES="
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
-	portable-atomic@1.9.0
-	proc-macro2@1.0.89
+	portable-atomic@1.10.0
+	proc-macro2@1.0.92
 	pyo3-build-config@0.21.2
 	pyo3-ffi@0.21.2
 	pyo3-macros-backend@0.21.2
 	pyo3-macros@0.21.2
 	pyo3@0.21.2
 	quote@1.0.37
-	redox_syscall@0.5.7
+	redox_syscall@0.5.8
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.215
-	serde_derive@1.0.215
+	serde@1.0.216
+	serde_derive@1.0.216
 	serde_json@1.0.133
 	serde_repr@0.1.19
 	shlex@1.3.0
@@ -75,7 +75,7 @@ CRATES="
 	smallvec@1.13.2
 	stable_deref_trait@1.2.0
 	syn@1.0.109
-	syn@2.0.87
+	syn@2.0.90
 	synstructure@0.13.1
 	target-lexicon@0.12.16
 	thread_local@1.1.8
@@ -83,7 +83,7 @@ CRATES="
 	unicode-ident@1.0.14
 	unicode-xid@0.2.6
 	unindent@0.2.3
-	url@2.5.3
+	url@2.5.4
 	utf16_iter@1.0.5
 	utf8_iter@1.0.4
 	w-boson@0.1.0
@@ -117,10 +117,10 @@ CRATES="
 	windows_x86_64_msvc@0.52.6
 	write16@1.0.0
 	writeable@0.5.5
-	yoke-derive@0.7.4
-	yoke@0.7.4
-	zerofrom-derive@0.1.4
-	zerofrom@0.1.4
+	yoke-derive@0.7.5
+	yoke@0.7.5
+	zerofrom-derive@0.1.5
+	zerofrom@0.1.5
 	zerovec-derive@0.10.3
 	zerovec@0.10.4
 "
