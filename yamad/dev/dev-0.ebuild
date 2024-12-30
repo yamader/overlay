@@ -19,7 +19,7 @@ RDEPEND="
 	dev-build/scons
 	dev-build/xmake
 	dev-debug/gdb
-	dev-debug/lldb
+	llvm-core/lldb
 	dev-debug/ltrace
 	dev-debug/strace
 	dev-debug/valgrind

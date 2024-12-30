@@ -12,7 +12,6 @@ SLOT="0"
 # qt5compat is for musescore
 RDEPEND="
 	app-crypt/veracrypt
-	dev-qt/qt5compat
 	media-gfx/fontforge
 	media-gfx/gimp
 	media-gfx/inkscape
@@ -20,11 +19,11 @@ RDEPEND="
 	media-sound/musescore
 	media-sound/spotify
 	net-analyzer/wireshark
-	net-misc/mikutter
 	net-p2p/bitcoin-core
 	sci-electronics/kicad-meta
 	sci-visualization/gnuplot
 	www-client/firefox
 	www-client/google-chrome-unstable
-	www-client/nyxt
+
+	dev-qt/qt5compat
 "
