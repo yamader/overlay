@@ -5,7 +5,6 @@ YamaD's personal gentoo overlay
 ## additional overlays
 
 - `guru`
-- `src_prepare-overlay`
 - `gentoo-zh`
 
 ## install
