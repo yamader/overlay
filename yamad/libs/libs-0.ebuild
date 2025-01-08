@@ -9,7 +9,6 @@ HOMEPAGE="https://yamad.me"
 LICENSE="metapackage"
 SLOT="0"
 
-# compiler-rt-sanitizers is for pgo
 RDEPEND="
 	dev-cpp/gtkmm
 	dev-haskell/parsec
@@ -23,6 +22,5 @@ RDEPEND="
 	media-libs/sdl2-ttf
 	sci-electronics/systemc
 	sys-boot/gnu-efi
-	sys-libs/compiler-rt-sanitizers
 	sys-libs/ncurses
 "
