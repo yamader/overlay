@@ -19,7 +19,6 @@ RDEPEND="
 	dev-build/scons
 	dev-build/xmake
 	dev-debug/gdb
-	llvm-core/lldb
 	dev-debug/ltrace
 	dev-debug/strace
 	dev-debug/valgrind
@@ -28,7 +27,7 @@ RDEPEND="
 	dev-embedded/openocd
 	dev-embedded/platformio
 	dev-go/lichen
-	dev-haskell/cabal-install
+	dev-haskell/stack
 	dev-java/gradle-bin
 	dev-java/maven-bin
 	dev-lua/luarocks
@@ -67,6 +66,7 @@ RDEPEND="
 	dev-vcs/git-lfs
 	dev-vcs/mercurial
 	dev-vcs/subversion
+	llvm-core/lldb
 	media-gfx/graphviz
 	media-libs/woff2
 	sci-electronics/gtkwave
