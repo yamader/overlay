@@ -12,8 +12,8 @@ CRATES="
 	backtrace-on-stack-overflow@0.3.0
 	backtrace@0.3.74
 	bitflags@1.3.2
-	bitflags@2.6.0
-	cc@1.2.5
+	bitflags@2.8.0
+	cc@1.2.9
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
@@ -38,12 +38,12 @@ CRATES="
 	libc@0.2.169
 	litemap@0.7.4
 	lock_api@0.4.12
-	log@0.4.22
+	log@0.4.25
 	lsp-types@0.93.2
 	memchr@2.7.4
 	memoffset@0.6.5
 	memoffset@0.9.1
-	miniz_oxide@0.8.2
+	miniz_oxide@0.8.3
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
@@ -53,7 +53,7 @@ CRATES="
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
 	portable-atomic@1.10.0
-	proc-macro2@1.0.92
+	proc-macro2@1.0.93
 	pyo3-build-config@0.21.2
 	pyo3-ffi@0.21.2
 	pyo3-macros-backend@0.21.2
@@ -64,9 +64,9 @@ CRATES="
 	rustc-demangle@0.1.24
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.216
-	serde_derive@1.0.216
-	serde_json@1.0.134
+	serde@1.0.217
+	serde_derive@1.0.217
+	serde_json@1.0.135
 	serde_repr@0.1.19
 	shlex@1.3.0
 	signal-hook-mio@0.2.4
@@ -75,7 +75,7 @@ CRATES="
 	smallvec@1.13.2
 	stable_deref_trait@1.2.0
 	syn@1.0.109
-	syn@2.0.91
+	syn@2.0.96
 	synstructure@0.13.1
 	target-lexicon@0.12.16
 	thread_local@1.1.8
