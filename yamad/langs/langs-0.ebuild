@@ -43,5 +43,5 @@ RDEPEND="
 	sci-mathematics/coq
 	sci-mathematics/lean
 	virtual/dotnet-sdk
-	virtual/kotlin
 "
+#	virtual/kotlin # ::spark-overlay broken

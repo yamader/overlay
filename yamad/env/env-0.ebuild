@@ -13,5 +13,4 @@ RDEPEND="
 	sys-apps/fakeroot
 	sys-apps/flatpak
 	sys-apps/nix
-	sys-apps/pacman
 "

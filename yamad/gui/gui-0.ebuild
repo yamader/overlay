@@ -24,7 +24,6 @@ RDEPEND="
 	gui-libs/greetd
 	media-gfx/feh
 	media-sound/alsa-utils
-	media-sound/easyeffects
 	media-sound/pavucontrol
 	media-video/libva-utils
 	media-video/pipewire
@@ -42,3 +41,4 @@ RDEPEND="
 	xfce-base/tumbler
 	video_cards_nvidia? ( media-libs/nvidia-vaapi-driver )
 "
+#	media-sound/easyeffects # libcxx incompat
