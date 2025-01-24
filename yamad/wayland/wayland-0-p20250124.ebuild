@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,7 +13,9 @@ SLOT="0"
 RDEPEND="
 	app-misc/wayland-utils
 	gui-apps/azote
+	gui-apps/grim
 	gui-apps/kanshi
+	gui-apps/slurp
 	gui-apps/swaybg
 	gui-apps/swayidle
 	gui-apps/swaylock-effects
