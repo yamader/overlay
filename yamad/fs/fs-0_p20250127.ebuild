@@ -34,3 +34,4 @@ RDEPEND="
 	sys-fs/squashfuse
 	sys-fs/xfsprogs
 "
+	# sys-fs/zfs
