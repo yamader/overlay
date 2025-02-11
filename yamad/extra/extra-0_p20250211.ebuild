@@ -11,6 +11,7 @@ SLOT="0"
 
 # qt5compat is for musescore
 RDEPEND="
+	app-crypt/seahorse
 	app-crypt/veracrypt
 	media-gfx/fontforge
 	media-gfx/gimp

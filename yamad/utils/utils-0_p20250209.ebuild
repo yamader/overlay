@@ -15,6 +15,7 @@ RDEPEND="
 	dev-util/android-tools
 	dev-util/tokei
 	media-gfx/fbgrab
+	media-gfx/xdot
 	sys-apps/arch-chroot
 	sys-apps/hdparm
 	sys-apps/kmscon
