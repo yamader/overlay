@@ -13,7 +13,7 @@ CRATES="
 	backtrace@0.3.74
 	bitflags@1.3.2
 	bitflags@2.8.0
-	cc@1.2.9
+	cc@1.2.14
 	cfg-if@1.0.0
 	crossterm@0.25.0
 	crossterm_winapi@0.9.1
@@ -43,12 +43,12 @@ CRATES="
 	memchr@2.7.4
 	memoffset@0.6.5
 	memoffset@0.9.1
-	miniz_oxide@0.8.3
+	miniz_oxide@0.8.4
 	mio@0.8.11
 	molc@0.3.0
 	nix@0.23.2
 	object@0.36.7
-	once_cell@1.20.2
+	once_cell@1.20.3
 	parking_lot@0.12.3
 	parking_lot_core@0.9.10
 	percent-encoding@2.3.1
@@ -62,25 +62,25 @@ CRATES="
 	quote@1.0.38
 	redox_syscall@0.5.8
 	rustc-demangle@0.1.24
-	ryu@1.0.18
+	ryu@1.0.19
 	scopeguard@1.2.0
 	serde@1.0.217
 	serde_derive@1.0.217
-	serde_json@1.0.135
+	serde_json@1.0.138
 	serde_repr@0.1.19
 	shlex@1.3.0
 	signal-hook-mio@0.2.4
 	signal-hook-registry@1.4.2
 	signal-hook@0.3.17
-	smallvec@1.13.2
+	smallvec@1.14.0
 	stable_deref_trait@1.2.0
 	syn@1.0.109
-	syn@2.0.96
+	syn@2.0.98
 	synstructure@0.13.1
 	target-lexicon@0.12.16
 	thread_local@1.1.8
 	tinystr@0.7.6
-	unicode-ident@1.0.14
+	unicode-ident@1.0.16
 	unicode-xid@0.2.6
 	unindent@0.2.3
 	url@2.5.4
