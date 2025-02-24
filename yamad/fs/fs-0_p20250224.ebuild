@@ -29,6 +29,7 @@ RDEPEND="
 	sys-fs/inotify-tools
 	sys-fs/mac-fdisk
 	sys-fs/mtools
+	sys-fs/ncdu
 	sys-fs/ntfs3g
 	sys-fs/squashfs-tools
 	sys-fs/squashfuse
