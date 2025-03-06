@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,9 +10,10 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	app-eselect/eselect-guile
+	app-eselect/eselect-python
 	dev-java/openjdk
 	dev-java/openjdk:8
-	dev-lang/clojure
 	dev-lang/crystal
 	dev-lang/dmd
 	dev-lang/elixir
@@ -36,6 +37,7 @@ RDEPEND="
 	dev-lang/zig
 	dev-lisp/sbcl
 	dev-scheme/gauche
+	dev-scheme/guile
 	dev-scheme/racket
 	dev-scheme/sagittarius
 	dev-util/bcc

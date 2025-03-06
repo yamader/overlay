@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,6 +10,8 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	app-dicts/mecab-ipadic
+	app-text/mecab
 	dev-cpp/gtkmm
 	dev-haskell/parsec
 	dev-libs/boost
@@ -22,5 +24,4 @@ RDEPEND="
 	media-libs/sdl2-ttf
 	sci-electronics/systemc
 	sys-boot/gnu-efi
-	sys-libs/ncurses
 "

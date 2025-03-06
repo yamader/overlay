@@ -1,4 +1,4 @@
-# Copyright 2024 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,6 @@ RDEPEND="
 	net-analyzer/wireshark
 	net-p2p/bitcoin-core
 	sci-electronics/kicad-meta
-	sci-visualization/gnuplot
 	www-client/firefox
 	www-client/google-chrome-unstable
 
