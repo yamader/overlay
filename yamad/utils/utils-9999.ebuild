@@ -26,12 +26,12 @@ RDEPEND="
 	media-gfx/imagemagick
 	sci-libs/libqalculate
 	sys-apps/arch-chroot
-	sys-apps/baobab
 	sys-apps/bat
 	sys-apps/fakeroot
 	sys-apps/fd
 	sys-apps/kmscon
 	sys-apps/pv
+	sys-apps/qdirstat
 	sys-apps/ripgrep
 	sys-apps/unco
 	sys-block/gparted

@@ -62,7 +62,6 @@ RDEPEND="
 	dev-util/dub
 	dev-util/juliaup
 	dev-util/rustup
-	dev-util/sccache
 	dev-util/shards
 	dev-util/shellcheck
 	dev-util/snakeviz

@@ -11,6 +11,7 @@ SLOT="0"
 
 RDEPEND="
 	app-admin/doas
+	app-admin/logrotate
 	app-admin/sudo
 	app-admin/syslog-ng
 	app-eselect/eselect-timezone
