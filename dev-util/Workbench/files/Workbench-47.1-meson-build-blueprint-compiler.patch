@@ -1,0 +1,11 @@
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -10,7 +10,7 @@
+ bin_conf.set('command', 'SHELL=/bin/sh script --flush --quiet --return $XDG_RUNTIME_DIR/$FLATPAK_ID/typescript --command "' + app_id + ' $@"')
+ 
+ blueprint_compiler = find_program(
+-  '/app/bin/blueprint-compiler',
++  'blueprint-compiler',
+ )
+ 
+ meson.add_install_script('../build-aux/library.js', pkgdatadir)
