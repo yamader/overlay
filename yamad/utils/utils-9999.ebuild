@@ -11,6 +11,7 @@ SLOT="0"
 IUSE="video_cards_nvidia"
 
 RDEPEND="
+	app-admin/fatrace
 	app-admin/stow
 	app-crypt/gnupg
 	app-misc/hello

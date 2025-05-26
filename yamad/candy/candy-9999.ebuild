@@ -10,6 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	app-misc/cpufetch
 	app-misc/fastfetch
 	app-misc/figlet
 	app-misc/neofetch
