@@ -10,6 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 # swaybg is for azote
+# slstatus is for dwl
 RDEPEND="
 	app-misc/wayland-utils
 	gui-apps/azote
@@ -23,4 +24,5 @@ RDEPEND="
 	gui-apps/wdisplays
 	gui-apps/wlr-randr
 	x11-misc/dunst
+	x11-misc/slstatus
 "
