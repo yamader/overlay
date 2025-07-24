@@ -34,11 +34,4 @@ RDEPEND="
 	xfce-base/thunar
 	xfce-base/thunar-volman
 	xfce-base/tumbler
-
-	app-misc/nwg-look
-	gui-apps/qt6ct
-	x11-themes/adwaita-icon-theme
-	x11-themes/papirus-icon-theme
-	x11-themes/vimix-xcursors
 "
-#	media-sound/easyeffects # libcxx incompat

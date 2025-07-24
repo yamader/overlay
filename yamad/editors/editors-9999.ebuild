@@ -19,6 +19,5 @@ RDEPEND="
 	app-editors/sublime-text
 	app-editors/vim
 	app-editors/vscode
-	app-editors/zed
 	dev-util/tree-sitter-cli
 "

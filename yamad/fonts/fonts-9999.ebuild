@@ -20,6 +20,7 @@ RDEPEND="
 	media-fonts/ja-ipafonts
 	media-fonts/moralerspace
 	media-fonts/noto
+	media-fonts/noto-cjk
 	media-fonts/noto-emoji
 	media-fonts/plemoljp
 	media-fonts/source-han-sans

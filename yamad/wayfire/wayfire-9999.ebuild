@@ -11,5 +11,6 @@ SLOT="0"
 
 RDEPEND="
 	gui-libs/wayfire-plugins-extra
+	gui-libs/xdg-desktop-portal-wlr
 	gui-wm/wayfire
 "

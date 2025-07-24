@@ -21,5 +21,4 @@ RDEPEND="
 	dev-texlive/texlive-games
 	sci-visualization/gnuplot
 	virtual/pandoc
-	www-apps/hugo
 "

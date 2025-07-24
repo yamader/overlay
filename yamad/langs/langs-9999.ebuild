@@ -13,7 +13,6 @@ RDEPEND="
 	app-eselect/eselect-guile
 	app-eselect/eselect-python
 	dev-java/openjdk
-	dev-java/openjdk:8
 	dev-lang/crystal
 	dev-lang/dmd
 	dev-lang/elixir
@@ -41,6 +40,7 @@ RDEPEND="
 	dev-scheme/racket
 	dev-scheme/sagittarius
 	dev-util/bcc
+	llvm-core/flang
 	sci-electronics/iverilog
 	sci-mathematics/coq
 	sci-mathematics/lean

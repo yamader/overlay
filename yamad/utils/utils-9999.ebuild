@@ -14,6 +14,7 @@ RDEPEND="
 	app-admin/fatrace
 	app-admin/stow
 	app-crypt/gnupg
+	app-crypt/sequoia-sq
 	app-misc/hello
 	app-misc/jq
 	app-misc/rlwrap
@@ -41,7 +42,6 @@ RDEPEND="
 	sys-fs/fswatch
 	sys-fs/inotify-tools
 	sys-fs/ncdu
-	sys-power/powertop
 	sys-process/bottom
 	sys-process/btop
 	sys-process/htop

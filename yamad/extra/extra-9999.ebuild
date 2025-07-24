@@ -17,6 +17,7 @@ RDEPEND="
 	media-gfx/gimp
 	media-gfx/inkscape
 	media-sound/audacity
+	media-sound/easyeffects
 	media-sound/musescore
 	media-sound/spotify
 	net-analyzer/wireshark

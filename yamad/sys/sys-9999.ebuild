@@ -12,10 +12,9 @@ SLOT="0"
 RDEPEND="
 	app-admin/doas
 	app-admin/logrotate
+	app-admin/metalog
 	app-admin/sudo
-	app-admin/syslog-ng
 	app-eselect/eselect-timezone
-	media-gfx/minegrub-theme
 	sys-apps/busybox
 	sys-apps/man-pages
 	sys-apps/man-pages-posix
@@ -27,7 +26,6 @@ RDEPEND="
 	sys-process/dcron
 	sys-process/runit
 
-	app-misc/brightnessctl
 	app-pda/usbmuxd
 	dev-util/android-tools
 	sys-apps/fwupd
@@ -58,6 +56,7 @@ RDEPEND="
 	sys-fs/fuse
 	sys-fs/mac-fdisk
 	sys-fs/mtools
+	sys-fs/ntfs3g
 	sys-fs/squashfs-tools
 	sys-fs/squashfuse
 	sys-fs/xfsprogs

@@ -10,8 +10,8 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	app-i18n/fcitx-cskk
 	app-i18n/fcitx-meta
 	app-i18n/man-pages-ja
 	app-i18n/skktools
+	app-i18n/yaskkserv2
 "

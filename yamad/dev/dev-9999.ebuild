@@ -19,17 +19,18 @@ RDEPEND="
 	dev-debug/strace
 	dev-debug/valgrind
 	dev-embedded/arduino
-	dev-embedded/esp-idf
 	dev-embedded/openocd
 	dev-embedded/platformio
 	dev-util/fq
 	dev-util/github-cli
 	dev-util/google-perftools
 	dev-util/poke
+	dev-vcs/darcs
 	dev-vcs/fossil
 	dev-vcs/git
 	dev-vcs/git-lfs
 	dev-vcs/mercurial
+	dev-vcs/pijul
 	dev-vcs/subversion
 	llvm-core/lldb
 	sci-electronics/gtkwave
@@ -38,7 +39,6 @@ RDEPEND="
 	video_cards_nvidia? ( dev-util/nvidia-cuda-toolkit )
 
 	dev-go/lichen
-	dev-haskell/stack
 	dev-java/gradle-bin
 	dev-java/maven-bin
 	dev-lua/luarocks
@@ -46,21 +46,17 @@ RDEPEND="
 	dev-ml/opam
 	dev-ml/utop
 	dev-python/base58
-	dev-python/black
-	dev-python/flake8
-	dev-python/isort
-	dev-python/mypy
-	dev-python/numpy
 	dev-python/tox
 	dev-python/uv
 	dev-util/bear
 	dev-util/ccache
-	dev-util/dcd
 	dev-util/dfmt
 	dev-util/dlang-tools
 	dev-util/dscanner
 	dev-util/dub
+	dev-util/ghcup-bin
 	dev-util/juliaup
+	dev-util/ruff
 	dev-util/rustup
 	dev-util/shards
 	dev-util/shellcheck

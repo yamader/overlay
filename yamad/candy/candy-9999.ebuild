@@ -13,7 +13,6 @@ RDEPEND="
 	app-misc/cpufetch
 	app-misc/fastfetch
 	app-misc/figlet
-	app-misc/neofetch
 	app-misc/oneko
 	app-misc/pfetch
 	app-misc/sl
