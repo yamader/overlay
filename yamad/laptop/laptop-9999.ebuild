@@ -11,7 +11,6 @@ SLOT="0"
 
 RDEPEND="
 	app-misc/brightnessctl
+	sys-apps/tuned
 	sys-power/powertop
-	sys-power/tlp
-	sys-power/tlpui
 "
