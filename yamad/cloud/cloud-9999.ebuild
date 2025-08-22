@@ -10,5 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	net-vpn/cloudflared
+	net-vpn/gsocket
 	net-vpn/tailscale
 "

@@ -44,6 +44,7 @@ RDEPEND="
 	sys-fs/ncdu
 	sys-process/bottom
 	sys-process/btop
+	sys-process/gotop
 	sys-process/htop
 	sys-process/iotop
 	sys-process/lsof

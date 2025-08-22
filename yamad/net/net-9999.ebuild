@@ -22,7 +22,6 @@ RDEPEND="
 	net-print/cups
 	net-print/cups-filters
 	net-print/foomatic-db-ppds
-	net-vpn/gsocket
 	net-vpn/tor
 	net-vpn/wireguard-tools
 
