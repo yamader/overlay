@@ -22,6 +22,7 @@ RDEPEND="
 	gui-apps/swaylock-effects
 	gui-apps/waybar
 	gui-apps/wdisplays
+	gui-apps/wev
 	gui-apps/wlr-randr
 	x11-misc/dunst
 	x11-misc/slstatus
