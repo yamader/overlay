@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>dev@dyama.net</email>
+    <name>Daichi Yamamoto</name>
+  </maintainer>
+  <use>
+    <flag name="x11">build client for X11</flag>
+    <flag name="gnome">build client for GNOME Wayland</flag>
+    <flag name="kde">build client for KDE-Plasma Wayland</flag>
+    <flag name="wlroots">build client for Sway, Wayfire, etc.</flag>
+    <flag name="hyprland">build client for Hyprland</flag>
+  </use>
+  <upstream>
+    <remote-id type="github">xremap/xremap</remote-id>
+  </upstream>
+</pkgmetadata>
