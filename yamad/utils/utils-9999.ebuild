@@ -22,6 +22,7 @@ RDEPEND="
 	app-shells/fish
 	app-text/dos2unix
 	app-text/tree
+	dev-db/sqlitebrowser
 	dev-libs/nss
 	dev-util/librnp
 	dev-util/tokei
