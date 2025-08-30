@@ -13,6 +13,7 @@ RDEPEND="
 	app-crypt/glep63-check
 	app-doc/eclass-manpages
 	app-eselect/eselect-repository
+	app-misc/resolve-march-native
 	app-portage/cpuid2cpuflags
 	app-portage/eix
 	app-portage/flaggie
