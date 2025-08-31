@@ -28,6 +28,7 @@ RDEPEND="
 	dev-util/tokei
 	media-gfx/fbgrab
 	media-gfx/imagemagick
+	media-libs/exiftool
 	sci-libs/libqalculate
 	sys-apps/arch-chroot
 	sys-apps/bat
