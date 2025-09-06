@@ -9,6 +9,7 @@ HOMEPAGE="https://yamad.me"
 LICENSE="metapackage"
 SLOT="0"
 
+# for compiler-rt-sanitizers; cf. gentoo/profiles/features/llvm/package.use
 RDEPEND="
 	app-crypt/glep63-check
 	app-doc/eclass-manpages
@@ -24,6 +25,7 @@ RDEPEND="
 	dev-util/catalyst
 	dev-util/pkgcheck
 	dev-util/pkgdev
+	llvm-runtimes/compiler-rt-sanitizers
 	sys-apps/pkgcore
 	sys-devel/crossdev
 "
