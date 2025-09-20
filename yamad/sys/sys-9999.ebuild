@@ -19,9 +19,6 @@ RDEPEND="
 	sys-apps/man-pages
 	sys-apps/man-pages-posix
 	sys-apps/rng-tools
-	sys-boot/efibootmgr
-	sys-boot/grub
-	sys-boot/refind
 	sys-process/at
 	sys-process/dcron
 	sys-process/runit
@@ -37,6 +34,10 @@ RDEPEND="
 	sys-apps/smartmontools
 	sys-apps/usbutils
 
+	app-crypt/clevis
+	sys-boot/efibootmgr
+	sys-boot/grub
+	sys-boot/refind
 	sys-kernel/cachyos-sources
 	sys-kernel/dracut
 	sys-kernel/installkernel
