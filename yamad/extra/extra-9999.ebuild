@@ -23,6 +23,7 @@ RDEPEND="
 	net-analyzer/wireshark
 	net-p2p/bitcoin-core
 	sci-electronics/kicad-meta
+	sys-boot/ventoy-bin
 	www-client/firefox
 	www-client/google-chrome-unstable
 

@@ -52,7 +52,7 @@ RDEPEND="
 	sys-fs/btrfs-progs
 	sys-fs/compsize
 	sys-fs/dosfstools
-	sys-fs/exfatprogs
+	sys-fs/exfat-utils
 	sys-fs/f2fs-tools
 	sys-fs/fuse
 	sys-fs/mac-fdisk
