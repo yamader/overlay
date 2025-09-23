@@ -36,6 +36,7 @@ RDEPEND="
 	net-misc/telnet-bsd
 	net-misc/whois
 
+	net-misc/aria2
 	net-misc/rclone
 	net-misc/yt-dlp
 	net-misc/zsync

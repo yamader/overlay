@@ -13,6 +13,7 @@ IUSE="video_cards_nvidia"
 RDEPEND="
 	app-admin/fatrace
 	app-admin/stow
+	app-crypt/chntpw
 	app-crypt/gnupg
 	app-crypt/sequoia-sq
 	app-misc/hello
@@ -55,6 +56,7 @@ RDEPEND="
 
 	app-arch/7zip
 	app-arch/unrar
+	app-arch/wimlib
 	media-gfx/graphviz
 	media-gfx/jp2a
 	media-gfx/qrencode
