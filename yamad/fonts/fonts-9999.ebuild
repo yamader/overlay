@@ -8,6 +8,7 @@ HOMEPAGE="https://yamad.me"
 
 LICENSE="metapackage"
 SLOT="0"
+IUSE="extra"
 
 RDEPEND="
 	media-fonts/corefonts
@@ -18,13 +19,15 @@ RDEPEND="
 	media-fonts/hackgen
 	media-fonts/ipaex
 	media-fonts/ja-ipafonts
-	media-fonts/moralerspace
 	media-fonts/noto
 	media-fonts/noto-cjk
 	media-fonts/noto-emoji
-	media-fonts/plemoljp
 	media-fonts/source-han-sans
 	media-fonts/source-han-serif
 	media-fonts/ubuntu-font-family
 	media-fonts/udev-gothic
+	extra? (
+		media-fonts/moralerspace
+		media-fonts/plemoljp
+	)
 "
