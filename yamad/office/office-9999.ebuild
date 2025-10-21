@@ -11,6 +11,7 @@ SLOT="0"
 
 RDEPEND="
 	app-office/libreoffice
+	app-office/obsidian
 	app-text/cpdf
 	app-text/texlive
 	app-text/typst
