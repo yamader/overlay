@@ -20,7 +20,7 @@ RDEPEND="
 	sys-apps/man-pages-posix
 	sys-apps/rng-tools
 	sys-process/at
-	sys-process/dcron
+	sys-process/cronie
 	sys-process/runit
 
 	app-pda/usbmuxd
