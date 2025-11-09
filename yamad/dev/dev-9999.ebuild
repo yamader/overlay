@@ -24,6 +24,7 @@ RDEPEND="
 	dev-util/fq
 	dev-util/github-cli
 	dev-util/google-perftools
+	dev-util/measureme
 	dev-util/poke
 	dev-vcs/darcs
 	dev-vcs/fossil
