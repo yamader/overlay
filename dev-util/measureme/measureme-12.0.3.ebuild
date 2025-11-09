@@ -122,6 +122,8 @@ LICENSE+="
 SLOT="0"
 KEYWORDS="~amd64"
 
+QA_FLAGS_IGNORED=".*"
+
 src_install() {
 	cargo_src_install --path crox
 	cargo_src_install --path flamegraph
