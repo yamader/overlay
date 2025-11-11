@@ -21,6 +21,7 @@ RDEPEND="
 	dev-embedded/arduino
 	dev-embedded/openocd
 	dev-embedded/platformio
+	dev-util/dcd
 	dev-util/fq
 	dev-util/github-cli
 	dev-util/google-perftools
