@@ -23,6 +23,7 @@ RDEPEND="
 	dev-lang/gnu-apl
 	dev-lang/gnucobol
 	dev-lang/harec
+	dev-lang/haxe
 	dev-lang/idris2
 	dev-lang/ldc2
 	dev-lang/lua

@@ -58,6 +58,7 @@ RDEPEND="
 	dev-util/dub
 	dev-util/ghcup-bin
 	dev-util/juliaup
+	dev-util/ocamlformat
 	dev-util/ruff
 	dev-util/rustup
 	dev-util/shards
