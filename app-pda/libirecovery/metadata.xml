@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>me@dyama.net</email>
+    <name>YamaD</name>
+  </maintainer>
+  <use>
+    <flag name="tools">Build irecovery tools</flag>
+  </use>
+  <upstream>
+    <remote-id type="github">libimobiledevice/libirecovery</remote-id>
+  </upstream>
+</pkgmetadata>
