@@ -8,16 +8,19 @@ HOMEPAGE="https://yamad.me"
 
 LICENSE="metapackage"
 SLOT="0"
+IUSE="systemd"
 
 RDEPEND="
 	net-dns/avahi
-	net-misc/chrony
 	net-misc/dhcp
-	net-misc/netifrc
 	net-misc/networkmanager
-	net-misc/ntp
 	net-wireless/blueman
 	net-wireless/bluez
+	!systemd? (
+		net-misc/chrony
+		net-misc/netifrc
+		net-misc/ntp
+	)
 
 	net-print/cups
 	net-print/cups-filters

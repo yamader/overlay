@@ -8,11 +8,11 @@ HOMEPAGE="https://yamad.me"
 
 LICENSE="metapackage"
 SLOT="0"
+IUSE="systemd"
 
 RDEPEND="
 	app-admin/doas
 	app-admin/logrotate
-	app-admin/metalog
 	app-admin/sudo
 	app-eselect/eselect-timezone
 	sys-apps/busybox
@@ -22,6 +22,7 @@ RDEPEND="
 	sys-process/at
 	sys-process/cronie
 	sys-process/runit
+	!systemd? ( app-admin/metalog )
 
 	app-pda/usbmuxd
 	dev-util/android-tools
