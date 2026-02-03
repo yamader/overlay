@@ -33,6 +33,7 @@ RDEPEND="
 	dev-lang/php
 	dev-lang/rakudo
 	dev-lang/rust
+	dev-lang/swift
 	dev-lang/tcc
 	dev-lang/zig
 	dev-lisp/sbcl
