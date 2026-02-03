@@ -18,9 +18,8 @@ RDEPEND="
 	dev-debug/ltrace
 	dev-debug/strace
 	dev-debug/valgrind
-	dev-embedded/arduino
+	dev-embedded/arduino-ide
 	dev-embedded/openocd
-	dev-embedded/platformio
 	dev-util/dcd
 	dev-util/fq
 	dev-util/github-cli
