@@ -10,6 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	app-admin/awscli-bin
 	net-vpn/cloudflared
 	net-vpn/gsocket
 	net-vpn/tailscale
