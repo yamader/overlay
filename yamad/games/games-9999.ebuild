@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="games metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
@@ -16,5 +16,4 @@ RDEPEND="
 	games-fps/assaultcube
 	games-puzzle/xbomb
 	games-simulation/openttd
-	games-util/steam-launcher
 "

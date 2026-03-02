@@ -1,10 +1,10 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DESCRIPTION="Wayland metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
@@ -24,6 +24,4 @@ RDEPEND="
 	gui-apps/wdisplays
 	gui-apps/wev
 	gui-apps/wlr-randr
-	x11-misc/dunst
-	x11-misc/slstatus
 "

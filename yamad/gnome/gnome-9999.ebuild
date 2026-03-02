@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="Gnome metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
