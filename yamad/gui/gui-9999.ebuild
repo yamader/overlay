@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="GUI metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
@@ -22,7 +22,6 @@ RDEPEND="
 	x11-misc/ly
 	video_cards_nvidia? ( media-libs/nvidia-vaapi-driver )
 
-	app-misc/joy2key
 	gui-apps/foot
 	gui-apps/xcolor
 	media-gfx/feh

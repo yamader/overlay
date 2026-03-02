@@ -1,10 +1,10 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DESCRIPTION="editor metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
@@ -18,6 +18,6 @@ RDEPEND="
 	app-editors/neovim
 	app-editors/sublime-text
 	app-editors/vim
-	app-editors/vscode
+	app-editors/zed
 	dev-util/tree-sitter-cli
 "

@@ -4,7 +4,7 @@
 EAPI=8
 
 DESCRIPTION="machine learning metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"

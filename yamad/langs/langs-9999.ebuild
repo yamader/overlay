@@ -1,20 +1,17 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DESCRIPTION="languages metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	app-eselect/eselect-guile
-	app-eselect/eselect-python
 	dev-java/openjdk
 	dev-lang/crystal
-	dev-lang/dmd
 	dev-lang/elixir
 	dev-lang/erg
 	dev-lang/erlang
@@ -25,8 +22,7 @@ RDEPEND="
 	dev-lang/harec
 	dev-lang/haxe
 	dev-lang/idris2
-	dev-lang/ldc2
-	dev-lang/lua
+	dev-lang/kotlin-bin
 	dev-lang/luajit
 	dev-lang/nim
 	dev-lang/ocaml
@@ -41,11 +37,35 @@ RDEPEND="
 	dev-scheme/guile
 	dev-scheme/racket
 	dev-scheme/sagittarius
-	dev-util/bcc
 	llvm-core/flang
 	sci-electronics/iverilog
 	sci-mathematics/coq
 	sci-mathematics/lean
 	virtual/dotnet-sdk
+
+	app-eselect/eselect-guile
+	app-eselect/eselect-python
+
+	dev-util/ghcup-bin
+	dev-util/juliaup
+	dev-util/rustup
+
+	dev-java/gradle-bin
+	dev-java/maven-bin
+	dev-lua/luarocks
+	dev-ml/opam
+	dev-python/uv
+	dev-util/shards
+
+	dev-go/go-licenses
+	dev-ml/odoc
+	dev-ml/utop
+	dev-python/tox
+	dev-util/bcc
+	dev-util/measureme
+	dev-util/ocamlformat
+	dev-util/ruff
+	dev-util/shellcheck
+	dev-util/snakeviz
+	dev-util/stylua
 "
-#	virtual/kotlin # ::spark-overlay broken

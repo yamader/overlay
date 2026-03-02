@@ -1,10 +1,10 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DESCRIPTION="office metapackage"
-HOMEPAGE="https://yamad.me"
+HOMEPAGE="https://dyama.net"
 
 LICENSE="metapackage"
 SLOT="0"
@@ -20,6 +20,5 @@ RDEPEND="
 	dev-tex/latexmk
 	dev-tex/tectonic
 	dev-texlive/texlive-games
-	sci-visualization/gnuplot
 	virtual/pandoc
 "
