@@ -13,6 +13,7 @@ RDEPEND="
 	dev-java/openjdk
 	dev-lang/crystal
 	dev-lang/elixir
+	dev-lang/elm-compiler-bin
 	dev-lang/erg
 	dev-lang/erlang
 	dev-lang/gforth
