@@ -13,5 +13,6 @@ RDEPEND="
 	app-admin/awscli-bin
 	dev-util/github-cli
 	net-vpn/gsocket
+	net-vpn/openfortivpn
 	net-vpn/tailscale
 "

@@ -17,5 +17,7 @@ RDEPEND="
 	net-dns/unbound
 	net-fs/nfs-utils
 	net-fs/samba
+	net-misc/freerdp
+	www-servers/caddy
 	www-servers/h2o
 "

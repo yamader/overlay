@@ -33,6 +33,7 @@ RDEPEND="
 	sys-apps/hdparm
 	sys-apps/i2c-tools
 	sys-apps/lm-sensors
+	sys-apps/memtest86+
 	sys-apps/nvme-cli
 	sys-apps/pciutils
 	sys-apps/smartmontools

@@ -25,4 +25,7 @@ RDEPEND="
 	sys-boot/ventoy-bin
 	www-client/firefox
 	www-client/google-chrome-unstable
+
+	net-im/slack
+	net-im/vesktop-bin
 "
