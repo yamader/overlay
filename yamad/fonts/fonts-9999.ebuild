@@ -12,22 +12,24 @@ IUSE="extra"
 
 RDEPEND="
 	media-fonts/corefonts
-	media-fonts/courier-prime
 	media-fonts/fira-code
 	media-fonts/firge
 	media-fonts/fontawesome
-	media-fonts/hackgen
+	media-fonts/inter
 	media-fonts/ipaex
 	media-fonts/ja-ipafonts
 	media-fonts/noto
 	media-fonts/noto-cjk
 	media-fonts/noto-emoji
-	media-fonts/source-han-sans
-	media-fonts/source-han-serif
+	media-fonts/twemoji
 	media-fonts/ubuntu-font-family
-	media-fonts/udev-gothic
 	extra? (
+		media-fonts/courier-prime
+		media-fonts/hackgen
 		media-fonts/moralerspace
 		media-fonts/plemoljp
+		media-fonts/source-han-sans
+		media-fonts/source-han-serif
+		media-fonts/udev-gothic
 	)
 "
