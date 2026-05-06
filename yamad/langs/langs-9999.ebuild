@@ -10,7 +10,6 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	dev-java/openjdk
 	dev-lang/crystal
 	dev-lang/elixir
 	dev-lang/elm-compiler-bin
@@ -43,6 +42,7 @@ RDEPEND="
 	sci-mathematics/coq
 	sci-mathematics/lean
 	virtual/dotnet-sdk
+	virtual/jdk
 
 	app-eselect/eselect-guile
 	app-eselect/eselect-python
