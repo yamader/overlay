@@ -23,5 +23,6 @@ RDEPEND="
 	gui-apps/waybar
 	gui-apps/wdisplays
 	gui-apps/wev
+	gui-apps/wlr-dpms
 	gui-apps/wlr-randr
 "
