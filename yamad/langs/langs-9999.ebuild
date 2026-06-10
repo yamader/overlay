@@ -12,7 +12,6 @@ SLOT="0"
 RDEPEND="
 	dev-lang/crystal
 	dev-lang/elixir
-	dev-lang/elm-compiler-bin
 	dev-lang/erg
 	dev-lang/erlang
 	dev-lang/gforth
@@ -22,16 +21,13 @@ RDEPEND="
 	dev-lang/harec
 	dev-lang/haxe
 	dev-lang/idris2
-	dev-lang/kotlin-bin
 	dev-lang/luajit
 	dev-lang/nim
 	dev-lang/ocaml
 	dev-lang/php
 	dev-lang/rakudo
 	dev-lang/rust
-	dev-lang/swift
 	dev-lang/tcc
-	dev-lang/zig
 	dev-lisp/sbcl
 	dev-scheme/gauche
 	dev-scheme/guile
@@ -41,8 +37,13 @@ RDEPEND="
 	sci-electronics/iverilog
 	sci-mathematics/coq
 	sci-mathematics/lean
+
+	dev-lang/elm-compiler-bin
+	dev-lang/kotlin-bin
 	virtual/dotnet-sdk
 	virtual/jdk
+	|| ( dev-lang/swift dev-lang/swift-bin )
+	|| ( dev-lang/zig dev-lang/zig-bin )
 
 	app-eselect/eselect-guile
 	app-eselect/eselect-python
