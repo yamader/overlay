@@ -55,7 +55,7 @@ RDEPEND="
 	sys-apps/qdirstat
 	sys-fs/duf
 	sys-fs/fswatch
-	sys-fs/ncdu
+	sys-fs/gdu
 	sys-process/bottom
 	sys-process/btop
 	sys-process/gotop
