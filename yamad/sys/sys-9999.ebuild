@@ -12,6 +12,7 @@ IUSE="systemd"
 
 RDEPEND="
 	app-admin/doas
+	app-admin/doas-sudo-shim
 	app-admin/logrotate
 	sys-apps/busybox
 	sys-apps/flatpak

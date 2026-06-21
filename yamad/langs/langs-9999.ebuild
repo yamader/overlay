@@ -9,6 +9,7 @@ HOMEPAGE="https://dyama.net"
 LICENSE="metapackage"
 SLOT="0"
 
+#	dev-lang/haxe
 RDEPEND="
 	dev-lang/crystal
 	dev-lang/elixir
@@ -19,7 +20,6 @@ RDEPEND="
 	dev-lang/gnu-apl
 	dev-lang/gnucobol
 	dev-lang/harec
-	dev-lang/haxe
 	dev-lang/idris2
 	dev-lang/luajit
 	dev-lang/nim
@@ -38,6 +38,7 @@ RDEPEND="
 	sci-mathematics/coq
 	sci-mathematics/lean
 
+	dev-lang/bun-bin
 	dev-lang/elm-compiler-bin
 	dev-lang/kotlin-bin
 	virtual/dotnet-sdk
