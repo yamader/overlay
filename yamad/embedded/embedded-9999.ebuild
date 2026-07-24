@@ -10,6 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
+	app-pda/idevicerestore
 	dev-embedded/arduino-ide
 	dev-embedded/openocd
 	sci-electronics/gtkwave
