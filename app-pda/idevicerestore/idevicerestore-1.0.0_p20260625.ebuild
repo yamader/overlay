@@ -1,11 +1,11 @@
-# Copyright 2025 Gentoo Authors
+# Copyright 2025-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit autotools
 
-MY_COMMIT=74e3bd9286d16fc1290abde061ee00831d5b36f8
+MY_COMMIT=45145e9fdc8458022c61a4b87bd029b866d5bcdc
 
 DESCRIPTION="Restore/upgrade firmware of iOS devices"
 HOMEPAGE="
