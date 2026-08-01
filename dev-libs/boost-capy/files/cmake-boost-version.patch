@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -14,7 +14,7 @@
+ 
+ cmake_minimum_required(VERSION 3.13...3.31)
+ 
+-set(BOOST_CAPY_VERSION 1)
++set(BOOST_CAPY_VERSION 1.90.0)
+ if (BOOST_SUPERPROJECT_VERSION)
+     set(BOOST_CAPY_VERSION ${BOOST_SUPERPROJECT_VERSION})
+ endif ()
