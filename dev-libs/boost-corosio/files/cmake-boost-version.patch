@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -13,7 +13,7 @@
+ if(BOOST_SUPERPROJECT_VERSION)
+     set(BOOST_COROSIO_VERSION ${BOOST_SUPERPROJECT_VERSION})
+ else()
+-    set(BOOST_COROSIO_VERSION 1)
++    set(BOOST_COROSIO_VERSION 1.90.0)
+ endif()
+ 
+ project(boost_corosio VERSION "${BOOST_COROSIO_VERSION}" LANGUAGES CXX)

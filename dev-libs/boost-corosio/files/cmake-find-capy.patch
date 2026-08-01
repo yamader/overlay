@@ -1,0 +1,12 @@
+--- a/cmake/CorosioBuild.cmake
++++ b/cmake/CorosioBuild.cmake
+@@ -164,7 +164,8 @@
+                 $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
+         endforeach()
+ 
+-        get_target_property(_capy_imported boost_capy IMPORTED)
++        find_package(boost_capy CONFIG REQUIRED)
++        get_target_property(_capy_imported Boost::capy IMPORTED)
+ 
+         if(_capy_imported)
+             # Capy is an imported target (find_package, vcpkg, conan):
