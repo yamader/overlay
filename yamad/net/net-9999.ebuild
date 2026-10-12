@@ -31,7 +31,7 @@ RDEPEND="
 	net-analyzer/openbsd-netcat
 	net-analyzer/tcpdump
 	net-analyzer/traceroute
-	net-dns/bind-tools
+	net-dns/bind
 	net-misc/aria2
 	net-misc/curl
 	net-misc/rclone
