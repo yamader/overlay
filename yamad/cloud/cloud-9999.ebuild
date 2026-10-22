@@ -10,7 +10,7 @@ LICENSE="metapackage"
 SLOT="0"
 
 RDEPEND="
-	app-admin/awscli-bin
+	app-admin/awscli
 	dev-util/github-cli
 	net-vpn/gsocket
 	net-vpn/openfortivpn
