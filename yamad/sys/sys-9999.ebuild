@@ -44,7 +44,6 @@ RDEPEND="
 	sys-boot/grub
 	sys-boot/refind
 
-	sys-kernel/cachyos-sources
 	sys-kernel/dracut
 	sys-kernel/installkernel
 	sys-kernel/linux-firmware
