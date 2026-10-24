@@ -1,4 +1,4 @@
-amd64	llvm-desktop	exp
-amd64	llvm-desktop-systemd	exp
-amd64	musl-llvm-desktop	exp
-amd64	musl-llvm-desktop-systemd	exp
+amd64	llvm-systemd-desktop	exp
+amd64	llvm-systemd-desktop-nvidia	exp
+amd64	musl-llvm-systemd-desktop	exp
+amd64	musl-llvm-systemd-desktop-nvidia	exp

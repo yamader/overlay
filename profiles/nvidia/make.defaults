@@ -1,0 +1,3 @@
+USE="cuda nvdec nvenc vdpau"
+
+VIDEO_CARDS="nvidia"
