@@ -31,6 +31,5 @@ RDEPEND="
 	dev-vcs/subversion
 	llvm-core/lldb
 	sys-devel/distcc
-	sys-devel/mold
 	video_cards_nvidia? ( dev-util/nvidia-cuda-toolkit )
 "
